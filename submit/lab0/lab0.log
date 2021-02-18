@@ -1,0 +1,200 @@
+Script started on 2021-02-18 13:29:36-05:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="80" LINES="24"]
+mtullo1@remote-n25:~/tmp/lab0$ ls ~/.ssh
+known_hosts
+mtullo1@remote-n25:~/tmp/lab0$ ssh-keygem[Km[Kn
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/mtullo1/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/mtullo1/.ssh/id_rsa
+Your public key has been saved in /home/mtullo1/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:Mm7Xg2dL1z0ucYG4JFKLWxzcfmefN+2Hj/TXhX2U1mU mtullo1@remote-n25
+The key's randomart image is:
++---[RSA 3072]----+
+|        . .      |
+|         + .    E|
+|        + + . ..+|
+|       o = + o *o|
+|      o S o o ++=|
+|     . + o . o.=B|
+|      o o * . =+B|
+|     . . + + ooo*|
+|          .   oo=|
++----[SHA256]-----+
+mtullo1@remote-n25:~/tmp/lab0$ ssh-keygen[1Pls ~/.ssh
+id_rsa	id_rsa.pub  known_hosts
+mtullo1@remote-n25:~/tmp/lab0$ ssh-copy-id mtullo1@remote
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home/mtullo1/.ssh/id_rsa.pub"
+The authenticity of host 'remote (128.226.114.197)' can't be established.
+ECDSA key fingerprint is SHA256:UEIh1TASIC96TC1hhxVbkVS0DrddNKHk7Q2nzgDCt+Y.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+mtullo1@remote's password: 
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh 'mtullo1@remote'"
+and check to make sure that only the key(s) you wanted were added.
+
+mtullo1@remote-n25:~/tmp/lab0$ mkdir -p~[K ~~~~~~~~~~~~~~~[K[K[K[K[K[K[K[K[K[K[K[K[K[K/projects
+mtullo1@remote-n25:~/tmp/lab0$ cd ~~~~~~~~~~~~~[K[K[K[K[K[K[K[K[K[K[K[K/projects
+mtullo1@remote-n25:~/projects$ git clone mtullo1@remote.cs.binghamton.edu/~ui[Kmrin [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cg ar/git-repos/cs471.git
+fatal: repository 'mtullo1@remote.cs.binghamton.edu/~umrigar/git-repos/cs471.git' does not exist
+mtullo1@remote-n25:~/projects$ git clone mtullo1@remote.cs.binghamton.edu/~umrigar/git-repos/cs471.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csmtullo1@remote.cs.binghamton.edu/~umrigar/git-repos/cs471.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csmtullo1@remote.cs.binghamton.edu/~umrigar/git-repos/cs471.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chmtullo1@remote.cs.binghamton.edu/~umrigar/git-repos/cs471.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C:mtullo1@remote.cs.binghamton.edu/~umrigar/git-repos/cs471.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/mtullo1@remote.cs.binghamton.edu/~umrigar/git-repos/cs471.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/mtullo1@remote.cs.binghamton.edu/~umrigar/git-repos/cs471.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+Cloning into 'cs471'...
+remote: Enumerating objects: 448, done.[K
+remote: Counting objects:   0% (1/448)[Kremote: Counting objects:   1% (5/448)[Kremote: Counting objects:   2% (9/448)[Kremote: Counting objects:   3% (14/448)[Kremote: Counting objects:   4% (18/448)[Kremote: Counting objects:   5% (23/448)[Kremote: Counting objects:   6% (27/448)[Kremote: Counting objects:   7% (32/448)[Kremote: Counting objects:   8% (36/448)[Kremote: Counting objects:   9% (41/448)[Kremote: Counting objects:  10% (45/448)[Kremote: Counting objects:  11% (50/448)[Kremote: Counting objects:  12% (54/448)[Kremote: Counting objects:  13% (59/448)[Kremote: Counting objects:  14% (63/448)[Kremote: Counting objects:  15% (68/448)[Kremote: Counting objects:  16% (72/448)[Kremote: Counting objects:  17% (77/448)[Kremote: Counting objects:  18% (81/448)[Kremote: Counting objects:  19% (86/448)[Kremote: Counting objects:  20% (90/448)[Kremote: Counting objects:  21% (95/448)[Kremote: Counting objects:  22% (99/448)[Kremote: Counting objects:  23% (104/448)[Kremote: Counting objects:  24% (108/448)[Kremote: Counting objects:  25% (112/448)[Kremote: Counting objects:  26% (117/448)[Kremote: Counting objects:  27% (121/448)[Kremote: Counting objects:  28% (126/448)[Kremote: Counting objects:  29% (130/448)[Kremote: Counting objects:  30% (135/448)[Kremote: Counting objects:  31% (139/448)[Kremote: Counting objects:  32% (144/448)[Kremote: Counting objects:  33% (148/448)[Kremote: Counting objects:  34% (153/448)[Kremote: Counting objects:  35% (157/448)[Kremote: Counting objects:  36% (162/448)[Kremote: Counting objects:  37% (166/448)[Kremote: Counting objects:  38% (171/448)[Kremote: Counting objects:  39% (175/448)[Kremote: Counting objects:  40% (180/448)[Kremote: Counting objects:  41% (184/448)[Kremote: Counting objects:  42% (189/448)[Kremote: Counting objects:  43% (193/448)[Kremote: Counting objects:  44% (198/448)[Kremote: Counting objects:  45% (202/448)[Kremote: Counting objects:  46% (207/448)[Kremote: Counting objects:  47% (211/448)[Kremote: Counting objects:  48% (216/448)[Kremote: Counting objects:  49% (220/448)[Kremote: Counting objects:  50% (224/448)[Kremote: Counting objects:  51% (229/448)[Kremote: Counting objects:  52% (233/448)[Kremote: Counting objects:  53% (238/448)[Kremote: Counting objects:  54% (242/448)[Kremote: Counting objects:  55% (247/448)[Kremote: Counting objects:  56% (251/448)[Kremote: Counting objects:  57% (256/448)[Kremote: Counting objects:  58% (260/448)[Kremote: Counting objects:  59% (265/448)[Kremote: Counting objects:  60% (269/448)[Kremote: Counting objects:  61% (274/448)[Kremote: Counting objects:  62% (278/448)[Kremote: Counting objects:  63% (283/448)[Kremote: Counting objects:  64% (287/448)[Kremote: Counting objects:  65% (292/448)[Kremote: Counting objects:  66% (296/448)[Kremote: Counting objects:  67% (301/448)[Kremote: Counting objects:  68% (305/448)[Kremote: Counting objects:  69% (310/448)[Kremote: Counting objects:  70% (314/448)[Kremote: Counting objects:  71% (319/448)[Kremote: Counting objects:  72% (323/448)[Kremote: Counting objects:  73% (328/448)[Kremote: Counting objects:  74% (332/448)[Kremote: Counting objects:  75% (336/448)[Kremote: Counting objects:  76% (341/448)[Kremote: Counting objects:  77% (345/448)[Kremote: Counting objects:  78% (350/448)[Kremote: Counting objects:  79% (354/448)[Kremote: Counting objects:  80% (359/448)[Kremote: Counting objects:  81% (363/448)[Kremote: Counting objects:  82% (368/448)[Kremote: Counting objects:  83% (372/448)[Kremote: Counting objects:  84% (377/448)[Kremote: Counting objects:  85% (381/448)[Kremote: Counting objects:  86% (386/448)[Kremote: Counting objects:  87% (390/448)[Kremote: Counting objects:  88% (395/448)[Kremote: Counting objects:  89% (399/448)[Kremote: Counting objects:  90% (404/448)[Kremote: Counting objects:  91% (408/448)[Kremote: Counting objects:  92% (413/448)[Kremote: Counting objects:  93% (417/448)[Kremote: Counting objects:  94% (422/448)[Kremote: Counting objects:  95% (426/448)[Kremote: Counting objects:  96% (431/448)[Kremote: Counting objects:  97% (435/448)[Kremote: Counting objects:  98% (440/448)[Kremote: Counting objects:  99% (444/448)[Kremote: Counting objects: 100% (448/448)[Kremote: Counting objects: 100% (448/448), done.[K
+remote: Compressing objects:   0% (1/427)[Kremote: Compressing objects:   1% (5/427)[Kremote: Compressing objects:   2% (9/427)[Kremote: Compressing objects:   3% (13/427)[Kremote: Compressing objects:   4% (18/427)[Kremote: Compressing objects:   5% (22/427)[Kremote: Compressing objects:   6% (26/427)[Kremote: Compressing objects:   7% (30/427)[Kremote: Compressing objects:   8% (35/427)[Kremote: Compressing objects:   9% (39/427)[Kremote: Compressing objects:  10% (43/427)[Kremote: Compressing objects:  11% (47/427)[Kremote: Compressing objects:  12% (52/427)[Kremote: Compressing objects:  13% (56/427)[Kremote: Compressing objects:  14% (60/427)[Kremote: Compressing objects:  15% (65/427)[Kremote: Compressing objects:  16% (69/427)[Kremote: Compressing objects:  17% (73/427)[Kremote: Compressing objects:  18% (77/427)[Kremote: Compressing objects:  19% (82/427)[Kremote: Compressing objects:  20% (86/427)[Kremote: Compressing objects:  21% (90/427)[Kremote: Compressing objects:  22% (94/427)[Kremote: Compressing objects:  23% (99/427)[Kremote: Compressing objects:  24% (103/427)[Kremote: Compressing objects:  25% (107/427)[Kremote: Compressing objects:  26% (112/427)[Kremote: Compressing objects:  27% (116/427)[Kremote: Compressing objects:  28% (120/427)[Kremote: Compressing objects:  29% (124/427)[Kremote: Compressing objects:  30% (129/427)[Kremote: Compressing objects:  31% (133/427)[Kremote: Compressing objects:  32% (137/427)[Kremote: Compressing objects:  33% (141/427)[Kremote: Compressing objects:  34% (146/427)[Kremote: Compressing objects:  35% (150/427)[Kremote: Compressing objects:  36% (154/427)[Kremote: Compressing objects:  37% (158/427)[Kremote: Compressing objects:  38% (163/427)[Kremote: Compressing objects:  39% (167/427)[Kremote: Compressing objects:  40% (171/427)[Kremote: Compressing objects:  41% (176/427)[Kremote: Compressing objects:  42% (180/427)[Kremote: Compressing objects:  43% (184/427)[Kremote: Compressing objects:  44% (188/427)[Kremote: Compressing objects:  45% (193/427)[Kremote: Compressing objects:  46% (197/427)[Kremote: Compressing objects:  47% (201/427)[Kremote: Compressing objects:  48% (205/427)[Kremote: Compressing objects:  49% (210/427)[Kremote: Compressing objects:  50% (214/427)[Kremote: Compressing objects:  51% (218/427)[Kremote: Compressing objects:  52% (223/427)[Kremote: Compressing objects:  53% (227/427)[Kremote: Compressing objects:  54% (231/427)[Kremote: Compressing objects:  55% (235/427)[Kremote: Compressing objects:  56% (240/427)[Kremote: Compressing objects:  57% (244/427)[Kremote: Compressing objects:  58% (248/427)[Kremote: Compressing objects:  59% (252/427)[Kremote: Compressing objects:  60% (257/427)[Kremote: Compressing objects:  61% (261/427)[Kremote: Compressing objects:  62% (265/427)[Kremote: Compressing objects:  63% (270/427)[Kremote: Compressing objects:  64% (274/427)[Kremote: Compressing objects:  65% (278/427)[Kremote: Compressing objects:  66% (282/427)[Kremote: Compressing objects:  67% (287/427)[Kremote: Compressing objects:  68% (291/427)[Kremote: Compressing objects:  69% (295/427)[Kremote: Compressing objects:  70% (299/427)[Kremote: Compressing objects:  71% (304/427)[Kremote: Compressing objects:  72% (308/427)[Kremote: Compressing objects:  73% (312/427)[Kremote: Compressing objects:  74% (316/427)[Kremote: Compressing objects:  75% (321/427)[Kremote: Compressing objects:  76% (325/427)[Kremote: Compressing objects:  77% (329/427)[Kremote: Compressing objects:  78% (334/427)[Kremote: Compressing objects:  79% (338/427)[Kremote: Compressing objects:  80% (342/427)[Kremote: Compressing objects:  81% (346/427)[Kremote: Compressing objects:  82% (351/427)[Kremote: Compressing objects:  83% (355/427)[Kremote: Compressing objects:  84% (359/427)[Kremote: Compressing objects:  85% (363/427)[Kremote: Compressing objects:  86% (368/427)[Kremote: Compressing objects:  87% (372/427)[Kremote: Compressing objects:  88% (376/427)[Kremote: Compressing objects:  89% (381/427)[Kremote: Compressing objects:  90% (385/427)[Kremote: Compressing objects:  91% (389/427)[Kremote: Compressing objects:  92% (393/427)[Kremote: Compressing objects:  93% (398/427)[Kremote: Compressing objects:  94% (402/427)[Kremote: Compressing objects:  95% (406/427)[Kremote: Compressing objects:  96% (410/427)[Kremote: Compressing objects:  97% (415/427)[Kremote: Compressing objects:  98% (419/427)[Kremote: Compressing objects:  99% (423/427)[Kremote: Compressing objects: 100% (427/427)[Kremote: Compressing objects: 100% (427/427), done.[K
+Receiving objects:   0% (1/448)Receiving objects:   1% (5/448)Receiving objects:   2% (9/448)Receiving objects:   3% (14/448)Receiving objects:   4% (18/448)Receiving objects:   5% (23/448)Receiving objects:   6% (27/448)Receiving objects:   7% (32/448)Receiving objects:   8% (36/448)Receiving objects:   9% (41/448)Receiving objects:  10% (45/448)Receiving objects:  11% (50/448)Receiving objects:  12% (54/448)Receiving objects:  13% (59/448)Receiving objects:  14% (63/448)Receiving objects:  15% (68/448)Receiving objects:  16% (72/448)Receiving objects:  17% (77/448)Receiving objects:  18% (81/448)Receiving objects:  19% (86/448)Receiving objects:  20% (90/448)Receiving objects:  21% (95/448)Receiving objects:  22% (99/448)Receiving objects:  23% (104/448)Receiving objects:  24% (108/448)Receiving objects:  25% (112/448)Receiving objects:  26% (117/448)Receiving objects:  27% (121/448)Receiving objects:  28% (126/448)Receiving objects:  29% (130/448)Receiving objects:  30% (135/448)Receiving objects:  31% (139/448)Receiving objects:  32% (144/448)Receiving objects:  33% (148/448)Receiving objects:  34% (153/448)Receiving objects:  35% (157/448)Receiving objects:  36% (162/448)Receiving objects:  37% (166/448)Receiving objects:  38% (171/448)Receiving objects:  39% (175/448)Receiving objects:  40% (180/448)Receiving objects:  41% (184/448)Receiving objects:  42% (189/448)Receiving objects:  43% (193/448)Receiving objects:  44% (198/448)Receiving objects:  45% (202/448)Receiving objects:  46% (207/448)Receiving objects:  47% (211/448)Receiving objects:  48% (216/448)Receiving objects:  49% (220/448)Receiving objects:  50% (224/448)Receiving objects:  51% (229/448)Receiving objects:  52% (233/448)Receiving objects:  53% (238/448)Receiving objects:  54% (242/448)Receiving objects:  55% (247/448)Receiving objects:  56% (251/448)Receiving objects:  57% (256/448)Receiving objects:  58% (260/448)Receiving objects:  59% (265/448)Receiving objects:  60% (269/448)Receiving objects:  61% (274/448)Receiving objects:  62% (278/448)Receiving objects:  63% (283/448)Receiving objects:  64% (287/448)Receiving objects:  65% (292/448)Receiving objects:  66% (296/448)Receiving objects:  67% (301/448)Receiving objects:  68% (305/448)Receiving objects:  69% (310/448)Receiving objects:  70% (314/448)Receiving objects:  71% (319/448)Receiving objects:  72% (323/448)Receiving objects:  73% (328/448)Receiving objects:  74% (332/448)Receiving objects:  75% (336/448)Receiving objects:  76% (341/448)Receiving objects:  77% (345/448)Receiving objects:  78% (350/448)Receiving objects:  79% (354/448)Receiving objects:  80% (359/448)Receiving objects:  81% (363/448)Receiving objects:  82% (368/448)Receiving objects:  83% (372/448)Receiving objects:  84% (377/448)Receiving objects:  85% (381/448)Receiving objects:  86% (386/448)Receiving objects:  87% (390/448)Receiving objects:  88% (395/448)Receiving objects:  89% (399/448)Receiving objects:  90% (404/448)Receiving objects:  91% (408/448)Receiving objects:  92% (413/448)Receiving objects:  93% (417/448)Receiving objects:  94% (422/448)Receiving objects:  95% (426/448)remote: Total 448 (delta 197), reused 0 (delta 0), pack-reused 0[K
+Receiving objects:  96% (431/448)Receiving objects:  97% (435/448)Receiving objects:  98% (440/448)Receiving objects:  99% (444/448)Receiving objects: 100% (448/448)Receiving objects: 100% (448/448), 1.70 MiB | 6.98 MiB/s, done.
+Resolving deltas:   0% (0/197)Resolving deltas:   1% (2/197)Resolving deltas:   2% (4/197)Resolving deltas:   3% (6/197)Resolving deltas:   4% (8/197)Resolving deltas:   5% (10/197)Resolving deltas:   6% (12/197)Resolving deltas:   7% (14/197)Resolving deltas:   8% (16/197)Resolving deltas:   9% (18/197)Resolving deltas:  10% (20/197)Resolving deltas:  11% (22/197)Resolving deltas:  12% (24/197)Resolving deltas:  13% (26/197)Resolving deltas:  14% (28/197)Resolving deltas:  15% (30/197)Resolving deltas:  16% (32/197)Resolving deltas:  17% (34/197)Resolving deltas:  18% (36/197)Resolving deltas:  19% (38/197)Resolving deltas:  20% (40/197)Resolving deltas:  21% (42/197)Resolving deltas:  22% (44/197)Resolving deltas:  23% (46/197)Resolving deltas:  24% (48/197)Resolving deltas:  25% (50/197)Resolving deltas:  26% (52/197)Resolving deltas:  27% (54/197)Resolving deltas:  28% (56/197)Resolving deltas:  29% (58/197)Resolving deltas:  30% (60/197)Resolving deltas:  31% (62/197)Resolving deltas:  32% (64/197)Resolving deltas:  33% (66/197)Resolving deltas:  34% (67/197)Resolving deltas:  35% (69/197)Resolving deltas:  36% (71/197)Resolving deltas:  37% (73/197)Resolving deltas:  38% (75/197)Resolving deltas:  39% (77/197)Resolving deltas:  40% (79/197)Resolving deltas:  41% (81/197)Resolving deltas:  42% (83/197)Resolving deltas:  43% (85/197)Resolving deltas:  44% (87/197)Resolving deltas:  45% (89/197)Resolving deltas:  46% (91/197)Resolving deltas:  47% (93/197)Resolving deltas:  48% (95/197)Resolving deltas:  49% (97/197)Resolving deltas:  50% (99/197)Resolving deltas:  51% (101/197)Resolving deltas:  52% (103/197)Resolving deltas:  53% (105/197)Resolving deltas:  54% (107/197)Resolving deltas:  55% (109/197)Resolving deltas:  56% (111/197)Resolving deltas:  57% (113/197)Resolving deltas:  58% (115/197)Resolving deltas:  59% (117/197)Resolving deltas:  60% (119/197)Resolving deltas:  61% (121/197)Resolving deltas:  62% (123/197)Resolving deltas:  63% (125/197)Resolving deltas:  64% (127/197)Resolving deltas:  65% (129/197)Resolving deltas:  66% (131/197)Resolving deltas:  67% (132/197)Resolving deltas:  68% (134/197)Resolving deltas:  69% (136/197)Resolving deltas:  70% (138/197)Resolving deltas:  71% (140/197)Resolving deltas:  72% (142/197)Resolving deltas:  73% (144/197)Resolving deltas:  74% (146/197)Resolving deltas:  75% (148/197)Resolving deltas:  76% (150/197)Resolving deltas:  77% (152/197)Resolving deltas:  78% (154/197)Resolving deltas:  79% (156/197)Resolving deltas:  80% (158/197)Resolving deltas:  81% (160/197)Resolving deltas:  82% (162/197)Resolving deltas:  83% (164/197)Resolving deltas:  84% (166/197)Resolving deltas:  85% (168/197)Resolving deltas:  86% (170/197)Resolving deltas:  87% (172/197)Resolving deltas:  88% (174/197)Resolving deltas:  89% (176/197)Resolving deltas:  90% (178/197)Resolving deltas:  91% (180/197)Resolving deltas:  92% (182/197)Resolving deltas:  93% (184/197)Resolving deltas:  94% (186/197)Resolving deltas:  95% (188/197)Resolving deltas:  96% (190/197)Resolving deltas:  97% (192/197)Resolving deltas:  98% (194/197)Resolving deltas:  99% (196/197)Resolving deltas: 100% (197/197)Resolving deltas: 100% (197/197), done.
+mtullo1@remote-n25:~/projects$ cd ~
+mtullo1@remote-n25:~$ ln -s projects/cs471
+ln: failed to create symbolic link './cs471': File exists
+mtullo1@remote-n25:~$ ln -s projects/cs471
+ln: failed to create symbolic link './cs471': File exists
+mtullo1@remote-n25:~$ cd ~/projects/cs471
+mtullo1@remote-n25:~/projects/cs471$ git pull
+warning: Pulling without specifying how to reconcile divergent branches is
+discouraged. You can squelch this message by running one of the following
+commands sometime before your next pull:
+
+  git config pull.rebase false  # merge (the default strategy)
+  git config pull.rebase true   # rebase
+  git config pull.ff only       # fast-forward only
+
+You can replace "git config" with "git config --global" to set a default
+preference for all repositories. You can also pass --rebase, --no-rebase,
+or --ff-only on the command line to override the configured default per
+invocation.
+
+Already up to date.
+mtullo1@remote-n25:~/projects/cs471$ git log -5
+[?1h=[33mcommit 503fb882115a1c55660a0a0965ead2fc92462943[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31m[m [33m[m[33m[m[1;36m[m[1;32m[m[33m[m[1;31m[m[33m[m[1;31morigin/HEAD[m[33m)[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Thu Feb 18 11:55:51 2021 -0500[m
+[m
+    tweaks[m
+[m
+[33mcommit 7f049989fee36bb16e5577420fa36b45dd9ddcad[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Thu Feb 18 11:41:29 2021 -0500[m
+[m
+    syntax slides "complete"[m
+[m
+[33mcommit 3f58f1c9e8b3d313063db40b2ed1bddb75268251[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Thu Feb 18 11:13:46 2021 -0500[m
+[m
+    class video links[m
+[m
+[33mcommit 033feef3528f034d73cc60f5c49f49186b8b2dbd[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Wed Feb 17 15:30:29 2021 -0500[m
+[m
+:[K[K    added class doodles[m
+:[K[K[m
+:[K[K[33mcommit df8cb76c127aab62962eaf5e76f4e62659e82f76[m[m
+:[K[K...skipping...
+[m
+                   [1mSUMMARY[0m [1mOF[0m [1mLESS[0m [1mCOMMANDS[0m[m
+[m
+      Commands marked with * may be preceded by a number, [4mN[24m.[m
+      Notes in parentheses indicate the behavior if [4mN[24m is given.[m
+      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.[m
+[m
+  h  H                 Display this help.[m
+  q  :q  Q  :Q  ZZ     Exit.[m
+ ---------------------------------------------------------------------------[m
+[m
+                           [1mMOVING[0m[m
+[m
+  e  ^E  j  ^N  CR  *  Forward  one line   (or [4mN[24m lines).[m
+  y  ^Y  k  ^K  ^P  *  Backward one line   (or [4mN[24m lines).[m
+  f  ^F  ^V  SPACE  *  Forward  one window (or [4mN[24m lines).[m
+  b  ^B  ESC-v      *  Backward one window (or [4mN[24m lines).[m
+  z                 *  Forward  one window (and set window to [4mN[24m).[m
+  w                 *  Backward one window (and set window to [4mN[24m).[m
+  ESC-SPACE         *  Forward  one window, but don't stop at end-of-file.[m
+  d  ^D             *  Forward  one half-window (and set half-window to [4mN[24m).[m
+  u  ^U             *  Backward one half-window (and set half-window to [4mN[24m).[m
+  ESC-)  RightArrow *  Right one half screen width (or [4mN[24m positions).[m
+[7mHELP -- Press RETURN for more, or q when done[27m[K[K [KESCESC[Kqq[K[7mHELP -- Press RETURN for more, or q when done[27m[K[K  ESC-(  LeftArrow  *  Left  one half screen width (or [4mN[24m positions).[m
+[7mHELP -- Press RETURN for more, or q when done[27m[K...skipping...
+Date:   Thu Feb 18 11:55:51 2021 -0500[m
+[m
+    tweaks[m
+[m
+[33mcommit 7f049989fee36bb16e5577420fa36b45dd9ddcad[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Thu Feb 18 11:41:29 2021 -0500[m
+[m
+    syntax slides "complete"[m
+[m
+[33mcommit 3f58f1c9e8b3d313063db40b2ed1bddb75268251[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Thu Feb 18 11:13:46 2021 -0500[m
+[m
+    class video links[m
+[m
+[33mcommit 033feef3528f034d73cc60f5c49f49186b8b2dbd[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Wed Feb 17 15:30:29 2021 -0500[m
+[m
+    added class doodles[m
+[m
+[33mcommit df8cb76c127aab62962eaf5e76f4e62659e82f76[m[m
+:[K[K[?1l>mtullo1@remote-n25:~/projects/cs471$ git log -3 labs/lab0.umt
+fatal: ambiguous argument 'labs/lab0.umt': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+mtullo1@remote-n25:~/projects/cs471$ cat ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC9EPoFEMhVnxWaJJIOsvQBxWsB0YUALqtnsxBVJ56R79fjiMDUUyniopkpfswc/cGLwRtobj22Smpa4OkLdpv6ZFNfyn0lsSvANWWM+14bKijDx+yWVpYjxPnizMhC0di8a1v4cRn/3eNsH0J3MCEflfP2FQiWt8G4Vuvfn7SwYe8IV+heINiiERNsqDo5oh93/fG1kx0XduIbn/IPgQ3S/Nm5NevxPzXMnswinU4b2r0Iy5k2l2wR0OnM3zdvcjh4/k2oActpN+MHi9k2wpIO8W0UsTZ+t/WbkGwq3uua47GW+wAVdEnNVnDlQT/wWXqcxDpXsEp48qEVA4KbXWojYMf2+5q6UprlmT3iIRip6aJGV/jHl/75omZ86QwBoE+ngF1SCPe/RmiU8pMHgAwYLwKyluFf4bmxasYuVev1bhJsoptflBtAsmCoKUfqw0v71fl/ornyRUZ122eCWGTzj0Ccucgz2oKlk4SDVt8g/0FQFxu2fldYAfzPj+kDAiM= mtullo1@remote-n25
+mtullo1@remote-n25:~/projects/cs471$ mkdir -p ~/projects
+mtullo1@remote-n25:~/projects/cs471$ cs ~/projects
+bash: cs: command not found
+mtullo1@remote-n25:~/projects/cs471$ cs ~/projects[1P ~/projectsd ~/projects
+mtullo1@remote-n25:~/projects$ git co[Klone https://github.com/mtullo27/i471b.git
+Cloning into 'i471b'...
+Username for 'https://github.com': mtullo72  27
+Password for 'https://mtullo27@github.com': 
+remote: Enumerating objects: 4, done.[K
+remote: Counting objects:  25% (1/4)[Kremote: Counting objects:  50% (2/4)[Kremote: Counting objects:  75% (3/4)[Kremote: Counting objects: 100% (4/4)[Kremote: Counting objects: 100% (4/4), done.[K
+remote: Compressing objects:  25% (1/4)[Kremote: Compressing objects:  50% (2/4)[Kremote: Compressing objects:  75% (3/4)[Kremote: Compressing objects: 100% (4/4)[Kremote: Compressing objects: 100% (4/4), done.[K
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0[K
+Receiving objects:  25% (1/4)Receiving objects:  50% (2/4)Receiving objects:  75% (3/4)Receiving objects: 100% (4/4)Receiving objects: 100% (4/4), done.
+mtullo1@remote-n25:~/projects$ cd ~
+mtullo1@remote-n25:~$ ln -s ~/projects/i471b
+mtullo1@remote-n25:~$ cd 1471b
+bash: cd: 1471b: No such file or directory
+mtullo1@remote-n25:~$ cd i471b
+mtullo1@remote-n25:~/i471b$ ls 0a[K[K-a
+.  ..  .git  .gitignore  README.md
+mtullo1@remote-n25:~/i471b$ emac[K[K[K[Kged[K[K[Kfi[K[Kcs[Kd ~/i471b
+mtullo1@remote-n25:~/i471b$ v[Kgit status -s
+mtullo1@remote-n25:~/i471b$ ls -dl ~/cs471 ~/i41[K71b
+drwxr-x--- 2 mtullo1 mtullo1 10 Feb 18 13:21 /home/mtullo1/cs471
+lrwxrwxrwx 1 mtullo1 mtullo1 28 Feb 18 13:49 /home/mtullo1/i471b -> /home/mtullo1/projects/i471b
+mtullo1@remote-n25:~/i471b$ ls -l ~/.ssh ~/cs471 ~/i471b
+lrwxrwxrwx 1 mtullo1 mtullo1 28 Feb 18 13:49 /home/mtullo1/i471b -> /home/mtullo1/projects/i471b
+
+/home/mtullo1/cs471:
+total 0
+
+/home/mtullo1/.ssh:
+total 16
+-rw------- 1 mtullo1 mtullo1  572 Feb 18 13:33 authorized_keys
+-rw------- 1 mtullo1 mtullo1 2602 Feb 18 13:31 id_rsa
+-rw-r----- 1 mtullo1 mtullo1  572 Feb 18 13:31 id_rsa.pub
+-rw-r--r-- 1 mtullo1 mtullo1  888 Feb 18 13:33 known_hosts
+mtullo1@remote-n25:~/i471b$ cd ~/1[Ki471b
+mtullo1@remote-n25:~/i471b$ git checkout -b lab0
+Switched to a new branch 'lab0'
+mtullo1@remote-n25:~/i471b$ mkdir -p submit
+mtullo1@remote-n25:~/i471b$ exit
+
+Script done on 2021-02-18 13:52:48-05:00 [COMMAND_EXIT_CODE="0"]
