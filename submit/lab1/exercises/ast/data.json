@@ -1,0 +1,1 @@
+[{"tag":"-","kids":[{"tag":"+","kids":[{"tag":"INT","kids":[],"value":1},{"tag":"INT","kids":[],"value":2}]},{"tag":"INT","kids":[],"value":3}]},{"tag":"-","kids":[{"tag":"-","kids":[{"tag":"-","kids":[{"tag":"INT","kids":[],"value":2}]}]},{"tag":"-","kids":[{"tag":"INT","kids":[],"value":3},{"tag":"INT","kids":[],"value":4}]}]}]
