@@ -1,0 +1,577 @@
+Script started on 2021-02-25 15:44:08-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+mtullo1@remote-n08:~/i471b/submit/lab1$ ./lexre[K[Ker [K[K[K[K[K[K[K[Kcd ~/projects/cs471[K[K[K[K[K[K[K[K[K[K[K[K[K[Ki471b/submit//[Klab1/exercises/regex/[K
+mtullo1@remote-n08:~/i471b/submit/lab1/exercises/regex$ ls
+data.txt  lex1.mjs  lexer.mjs  table-lexer.mjs
+mtullo1@remote-n08:~/i471b/submit/lab1/exercises/regex$ ./lexer.mjs 
+usage: lexer.mjs RE_TABLE_FILE INPUT_FILE
+mtullo1@remote-n08:~/i471b/submit/lab1/exercises/regex$ ./lexer.mjs lexq[K1.mjs dat a.txt 
+Token { kind: [32m'INT'[39m, lexeme: [32m'21'[39m }
+Token { kind: [32m'INT'[39m, lexeme: [32m'23'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'A'[39m }
+Token { kind: [32m'INT'[39m, lexeme: [32m'34'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'_'[39m }
+Token { kind: [32m'INT'[39m, lexeme: [32m'22'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'I'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'D'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'_'[39m }
+Token { kind: [32m'INT'[39m, lexeme: [32m'44'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'/'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'/'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'a'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m's'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'd'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m's'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'd'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'f'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m's'[39m }
+mtullo1@remote-n08:~/i471b/submit/lab1/exercises/regex$ cp -r lex1.mjs lex2.[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+data.txt  lex1.mjs  lexer.mjs  table-lexer.mjs
+mtullo1@remote-n08:~/i471b/submit/lab1/exercises/regex$ mkdir [K[K[K[K[K[Kcp -r lex1.mjs lex2.mjs
+mtullo1@remote-n08:~/i471b/submit/lab1/exercises/regex$ ls
+data.txt  lex1.mjs  lex2.mjs  lexer.mjs  table-lexer.mjs
+mtullo1@remote-n08:~/i471b/submit/lab1/exercises/regex$ gedit lex2.mjs 
+mtullo1@remote-n08:~/i471b/submit/lab1/exercises/regex$ gedit lex2.mjs  $[K[K&
+[1] 2617283
+mtullo1@remote-n08:~/i471b/submit/lab1/exercises/regex$ 
+(gedit:2617283): Gtk-[1;33mWARNING[0m **: [34m15:47:48.591[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+gedit lex1.mjs &
+[2] 2617367
+mtullo1@remote-n08:~/i471b/submit/lab1/exercises/regex$ ./lexer.mjs lex2.mjs dat a.txt 
+SyntaxError: Unexpected token '/'
+[90m    at Loader.moduleStrategy (node:internal/modules/esm/translators:147:18)[39m
+[90m    at async link (node:internal/modules/esm/module_job:48:21)[39m
+[2]+  Done                    gedit lex1.mjs
+mtullo1@remote-n08:~/i471b/submit/lab1/exercises/regex$ ./lexer.mjs lex2.mjs data.txt 
+SyntaxError: Unexpected token '/'
+[90m    at Loader.moduleStrategy (node:internal/modules/esm/translators:147:18)[39m
+[90m    at async link (node:internal/modules/esm/module_job:48:21)[39m
+mtullo1@remote-n08:~/i471b/submit/lab1/exercises/regex$ ./lexer.mjs lex2.mjs data.txt 
+Token { kind: [32m'INT'[39m, lexeme: [32m'21'[39m }
+Token { kind: [32m'INT'[39m, lexeme: [32m'23'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'A'[39m }
+Token { kind: [32m'INT'[39m, lexeme: [32m'34'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'_'[39m }
+Token { kind: [32m'INT'[39m, lexeme: [32m'22'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'I'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'D'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'_'[39m }
+Token { kind: [32m'INT'[39m, lexeme: [32m'44'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'/'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'/'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'a'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m's'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'd'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m's'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'd'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'f'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m's'[39m }
+mtullo1@remote-n08:~/i471b/submit/lab1/exercises/regex$ ./lexer.mjs lex2.mjs data.txt 
+SyntaxError: Unexpected token '/'
+[90m    at Loader.moduleStrategy (node:internal/modules/esm/translators:147:18)[39m
+[90m    at async link (node:internal/modules/esm/module_job:48:21)[39m
+mtullo1@remote-n08:~/i471b/submit/lab1/exercises/regex$ ./lexer.mjs lex2.mjs data.txt 
+SyntaxError: Unexpected token '/'
+[90m    at Loader.moduleStrategy (node:internal/modules/esm/translators:147:18)[39m
+[90m    at async link (node:internal/modules/esm/module_job:48:21)[39m
+mtullo1@remote-n08:~/i471b/submit/lab1/exercises/regex$ ./lexer.mjs lex2.mjs data.txt 
+SyntaxError: Invalid regular expression: missing /
+[90m    at Loader.moduleStrategy (node:internal/modules/esm/translators:147:18)[39m
+[90m    at async link (node:internal/modules/esm/module_job:48:21)[39m
+mtullo1@remote-n08:~/i471b/submit/lab1/exercises/regex$ ./lexer.mjs lex2.mjs data.txt 
+Token { kind: [32m'INT'[39m, lexeme: [32m'21'[39m }
+Token { kind: [32m'INT'[39m, lexeme: [32m'23'[39m }
+Token { kind: [32m'ID'[39m, lexeme: [32m'A34'[39m }
+Token { kind: [32m'ID'[39m, lexeme: [32m'_22'[39m }
+Token { kind: [32m'ID'[39m, lexeme: [32m'ID_44'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'/'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'/'[39m }
+Token { kind: [32m'ID'[39m, lexeme: [32m'asd'[39m }
+Token { kind: [32m'ID'[39m, lexeme: [32m'sdfs'[39m }
+mtullo1@remote-n08:~/i471b/submit/lab1/exercises/regex$ cp -r lex2.mjs lex3.mjs
+mtullo1@remote-n08:~/i471b/submit/lab1/exercises/regex$ ;s
+bash: syntax error near unexpected token `;'
+mtullo1@remote-n08:~/i471b/submit/lab1/exercises/regex$ ls
+data.txt  lex1.mjs  lex2.mjs  lex3.mjs	lexer.mjs  table-lexer.mjs
+mtullo1@remote-n08:~/i471b/submit/lab1/exercises/regex$ gedit lex3.mjs &\[K
+[2] 2619763
+mtullo1@remote-n08:~/i471b/submit/lab1/exercises/regex$ gedit lex3.mjs &ls[K;scp -r lex2.mjs lex3.mjs./lexer.mjs lex2.mjs data.txt [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.mjs data.[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C3.mjs data[1@.[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+Token { kind: [32m'INT'[39m, lexeme: [32m'21'[39m }
+Token { kind: [32m'INT'[39m, lexeme: [32m'23'[39m }
+Token { kind: [32m'ID'[39m, lexeme: [32m'A34'[39m }
+Token { kind: [32m'ID'[39m, lexeme: [32m'_22'[39m }
+Token { kind: [32m'ID'[39m, lexeme: [32m'ID_44'[39m }
+[2]+  Done                    gedit lex3.mjs
+mtullo1@remote-n08:~/i471b/submit/lab1/exercises/regex$ cd [K ~/i471b/la[K[Ksubmit/lab1/e xercises/lexer/[K
+mtullo1@remote-n08:~/i471b/submit/lab1/exercises/lexer$ ls
+data.txt  lexer.mjs  lexer.py
+mtullo1@remote-n08:~/i471b/submit/lab1/exercises/lexer$ ./lexer.mjs 
+usage: lexer.mjs INPUT_FILE
+mtullo1@remote-n08:~/i471b/submit/lab1/exercises/lexer$ ./lexer.mjs  D[K[K[K[K[K[K[K[K[K[K[K[K[K[K./lexer.mjs  [Kdata.txt 
+Token { kind: [32m'INT'[39m, lexeme: [32m'21'[39m }
+Token { kind: [32m'INT'[39m, lexeme: [32m'23'[Script started on 2021-02-25 17:51:09-05:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="93" LINES="24"]
+mtullo1@remote-n11:/import/linux/home1/mtullo1/projects/i471b/submit/lab1$ cd ~/projects/i471b/submit/lab1/exercises/lexer/[K
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/lexer$ gedit lexer.mjs &
+[1] 2425086
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/lexer$ 
+(gedit:2425086): Gtk-[1;33mWARNING[0m **: [34m17:53:50.909[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/lexer$ ./lexer.mjs data.txt 
+file:///import/linux/home1/mtullo1/projects/i471b/submit/lab1/exercises/lexer/lexer.mjs:16
+    else if((m = text.match(/(\/\/.*)/)){
+                                        ^
+
+SyntaxError: Unexpected token '{'
+[90m    at Loader.moduleStrategy (node:internal/modules/esm/translators:147:18)[39m
+[90m    at async link (node:internal/modules/esm/module_job:48:21)[39m
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/lexer$ ./lexer.mjs data.txt 
+file:///import/linux/home1/mtullo1/projects/i471b/submit/lab1/exercises/lexer/lexer.mjs:13
+    if ((m = text.match(/(/\/\.*)|\s+/) {
+                        ^
+
+SyntaxError: Invalid regular expression flags
+[90m    at Loader.moduleStrategy (node:internal/modules/esm/translators:147:18)[39m
+[90m    at async link (node:internal/modules/esm/module_job:48:21)[39m
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/lexer$ ./lexer.mjs data.txt 
+file:///import/linux/home1/mtullo1/projects/i471b/submit/lab1/exercises/lexer/lexer.mjs:13
+    if ((m = text.match(/(\/\.*)|\s+/) {
+                                       ^
+
+SyntaxError: Unexpected token '{'
+[90m    at Loader.moduleStrategy (node:internal/modules/esm/translators:147:18)[39m
+[90m    at async link (node:internal/modules/esm/module_job:48:21)[39m
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/lexer$ ./lexer.mjs data.txt 
+file:///import/linux/home1/mtullo1/projects/i471b/submit/lab1/exercises/lexer/lexer.mjs:13
+    if ((m = text.match(/(\/\/.*)|\s+/) {
+                                        ^
+
+SyntaxError: Unexpected token '{'
+[90m    at Loader.moduleStrategy (node:internal/modules/esm/translators:147:18)[39m
+[90m    at async link (node:internal/modules/esm/module_job:48:21)[39m
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/lexer$ ./lexer.mjs data.txt 
+file:///import/linux/home1/mtullo1/projects/i471b/submit/lab1/exercises/lexer/lexer.mjs:13
+    if ((m = text.match(/^(\/\/.*)|\s+/) {
+                                         ^
+
+SyntaxError: Unexpected token '{'
+[90m    at Loader.moduleStrategy (node:internal/modules/esm/translators:147:18)[39m
+[90m    at async link (node:internal/modules/esm/module_job:48:21)[39m
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/lexer$ ./lexer.mjs data.txt 
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/lexer$ ./lexer.mjs data.txt 
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/lexer$ ,.le[K[K[K[K./lexer.mjs 
+usage: lexer.mjs INPUT_FILE
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/lexer$ ./lexer.mjs data.txt 
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/lexer$ cat data.txt 
+   21  23
+   A34  _22  ID_44
+   // asd sdfs
+   
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/lexer$ cat data.txt 
+   21  23
+   A34  _22  ID_44
+   // asd sdfs
+   
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/lexer$ cat data.txt [8@./lexer.mjs[C[C[C[C[C[C[C[C[C[C
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/lexer$ ./lexer.mjs data.txt 
+Token { kind: [32m'INT'[39m, lexeme: [32m'21'[39m }
+Token { kind: [32m'INT'[39m, lexeme: [32m'23'[39m }
+Token { kind: [32m'A'[39m, lexeme: [32m'A'[39m }
+Token { kind: [32m'INT'[39m, lexeme: [32m'34'[39m }
+Token { kind: [32m'_'[39m, lexeme: [32m'_'[39m }
+Token { kind: [32m'INT'[39m, lexeme: [32m'22'[39m }
+Token { kind: [32m'I'[39m, lexeme: [32m'I'[39m }
+Token { kind: [32m'D'[39m, lexeme: [32m'D'[39m }
+Token { kind: [32m'_'[39m, lexeme: [32m'_'[39m }
+Token { kind: [32m'INT'[39m, lexeme: [32m'44'[39m }
+Token { kind: [32m'/'[39m, lexeme: [32m'/'[39m }
+Token { kind: [32m'/'[39m, lexeme: [32m'/'[39m }
+Token { kind: [32m'a'[39m, lexeme: [32m'a'[39m }
+Token { kind: [32m's'[39m, lexeme: [32m's'[39m }
+Token { kind: [32m'd'[39m, lexeme: [32m'd'[39m }
+Token { kind: [32m's'[39m, lexeme: [32m's'[39m }
+Token { kind: [32m'd'[39m, lexeme: [32m'd'[39m }
+Token { kind: [32m'f'[39m, lexeme: [32m'f'[39m }
+Token { kind: [32m's'[39m, lexeme: [32m's'[39m }
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/lexer$ [Kmtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/lexer$ [Kmtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/lexer$ [Kmtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/lexer$ ./lexer.mjs data.txt 
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/lexer$ ./lexer.mjs data.txt 
+file:///import/linux/home1/mtullo1/projects/i471b/submit/lab1/exercises/lexer/lexer.mjs:21
+      tokens.push(new Token(m[0], m[0]));
+                             ^
+
+TypeError: Cannot read property '0' of null
+    at scan (file:///import/linux/home1/mtullo1/projects/i471b/submit/lab1/exercises/lexer/lexer.mjs:21:30)
+    at main (file:///import/linux/home1/mtullo1/projects/i471b/submit/lab1/exercises/lexer/lexer.mjs:34:23)
+    at file:///import/linux/home1/mtullo1/projects/i471b/submit/lab1/exercises/lexer/lexer.mjs:51:1
+[90m    at ModuleJob.run (node:internal/modules/esm/module_job:154:23)[39m
+[90m    at async Loader.import (node:internal/modules/esm/loader:166:24)[39m
+[90m    at async Object.loadESM (node:internal/process/esm_loader:68:5)[39m
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/lexer$ ./lexer.mjs data.txt 
+file:///import/linux/home1/mtullo1/projects/i471b/submit/lab1/exercises/lexer/lexer.mjs:21
+      tokens.push(new Token(m[0], m[0]));
+                             ^
+
+TypeError: Cannot read property '0' of null
+    at scan (file:///import/linux/home1/mtullo1/projects/i471b/submit/lab1/exercises/lexer/lexer.mjs:21:30)
+    at main (file:///import/linux/home1/mtullo1/projects/i471b/submit/lab1/exercises/lexer/lexer.mjs:34:23)
+    at file:///import/linux/home1/mtullo1/projects/i471b/submit/lab1/exercises/lexer/lexer.mjs:51:1
+[90m    at ModuleJob.run (node:internal/modules/esm/module_job:154:23)[39m
+[90m    at async Loader.import (node:internal/modules/esm/loader:166:24)[39m
+[90m    at async Object.loadESM (node:internal/process/esm_loader:68:5)[39m
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/lexer$ gedit lexer.py  &[K &
+[2] 2428905
+[1]   Done                    gedit lexer.mjs
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/lexer$ 
+(gedit:2428905): Gtk-[1;33mWARNING[0m **: [34m18:07:18.247[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/lexer$ ./lexer.py  data.txt 
+Traceback (most recent call last):
+  File "./lexer.py", line 57, in <module>
+    main()
+  File "./lexer.py", line 42, in main
+    tokens = scan(contents)
+  File "./lexer.py", line 33, in scan
+    (match, kind) = next_match(text)
+  File "./lexer.py", line 20, in next_match
+    m = re.compile(r'\s+ | (\/\/.*').match(text)
+  File "/usr/lib/python3.7/re.py", line 234, in compile
+    return _compile(pattern, flags)
+  File "/usr/lib/python3.7/re.py", line 286, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "/usr/lib/python3.7/sre_compile.py", line 764, in compile
+    p = sre_parse.parse(p, flags)
+  File "/usr/lib/python3.7/sre_parse.py", line 930, in parse
+    p = _parse_sub(source, pattern, flags & SRE_FLAG_VERBOSE, 0)
+  File "/usr/lib/python3.7/sre_parse.py", line 426, in _parse_sub
+    not nested and not items))
+  File "/usr/lib/python3.7/sre_parse.py", line 819, in _parse
+    source.tell() - start)
+re.error: missing ), unterminated subpattern at position 6
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/lexer$ ./lexer.py  data.txt 
+Traceback (most recent call last):
+  File "./lexer.py", line 57, in <module>
+    main()
+  File "./lexer.py", line 42, in main
+    tokens = scan(contents)
+  File "./lexer.py", line 33, in scan
+    (match, kind) = next_match(text)
+TypeError: cannot unpack non-iterable NoneType object
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/lexer$ ./lexer.py  data.txt 
+Token(kind='INT', lexeme='21')
+Token(kind='INT', lexeme='23')
+Token(kind='A', lexeme='A')
+Token(kind='INT', lexeme='34')
+Token(kind='_', lexeme='_')
+Token(kind='INT', lexeme='22')
+Token(kind='I', lexeme='I')
+Token(kind='D', lexeme='D')
+Token(kind='_', lexeme='_')
+Token(kind='INT', lexeme='44')
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/lexer$ ./lexer.py  data.txt 
+Token(kind='INT', lexeme='21')
+Token(kind='INT', lexeme='23')
+Token(kind='ID', lexeme='A34')
+Token(kind='ID', lexeme='_22')
+Token(kind='ID', lexeme='ID_44')
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/lexer$ cd ~/i471b[K[K[K[K[K[K/projects// [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci 471b/submit/lab1/exercises/calc/
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/calc$ ls
+calc.mjs  calc.py  data.txt  expn-data.txt
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/calc$ cat data.txt 
+1 + 2 - 3;
+
+--2 - (3 - 4);
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/calc$ ./calc.mjs data.txt 
+[ [33m0[39m, [33m3[39m ]
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/calc$ gedit calc.mjs & [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K&
+[3] 2429889
+[2]   Done                    gedit lexer.py  (wd: ~/projects/i471b/submit/lab1/exercises/lexer)
+(wd now: ~/projects/i471b/submit/lab1/exercises/calc)
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/calc$ ls
+calc.mjs  calc.py  data.txt  expn-data.txt
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/calc$ 
+(gedit:2429889): Gtk-[1;33mWARNING[0m **: [34m18:14:03.340[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+lsgedit calc.mjs & [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./calc.mjs data.txt 
+file:///import/linux/home1/mtullo1/projects/i471b/submit/lab1/exercises/calc/calc.mjs:71
+  		return * term();
+  		       ^
+
+SyntaxError: Unexpected token '*'
+[90m    at Loader.moduleStrategy (node:internal/modules/esm/translators:147:18)[39m
+[90m    at async link (node:internal/modules/esm/module_job:48:21)[39m
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/calc$ ./calc.mjs data.txt 
+file:///import/linux/home1/mtullo1/projects/i471b/submit/lab1/exercises/calc/calc.mjs:71
+  		return * term();
+  		       ^
+
+SyntaxError: Unexpected token '*'
+[90m    at Loader.moduleStrategy (node:internal/modules/esm/translators:147:18)[39m
+[90m    at async link (node:internal/modules/esm/module_job:48:21)[39m
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/calc$ ./calc.mjs data.txt [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./calc.mjs data.txt [K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ka.txt [K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[Kcalc. [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+calc.mjs  calc.py  data.txt  expn-data.txt
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/calc$ ./calc.mjs expn-data.txt 
+file:///import/linux/home1/mtullo1/projects/i471b/submit/lab1/exercises/calc/calc.mjs:71
+  		return * term();
+  		       ^
+
+SyntaxError: Unexpected token '*'
+[90m    at Loader.moduleStrategy (node:internal/modules/esm/translators:147:18)[39m
+[90m    at async link (node:internal/modules/esm/module_job:48:21)[39m
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/calc$ car expn-data.txt 
+bash: car: command not found
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/calc$ cat expn-data.txt 
+-2 ** 2 ** 3 ;
+1 + 2**(1 + 2) ;
+1 + -2**(1 + 2) ;
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/calc$ cat expn-data.txt [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr
+[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./calc.mjs expn-data.txt 
+file:///import/linux/home1/mtullo1/projects/i471b/submit/lab1/exercises/calc/calc.mjs:72
+  		return * term();
+  		       ^
+
+SyntaxError: Unexpected token '*'
+[90m    at Loader.moduleStrategy (node:internal/modules/esm/translators:147:18)[39m
+[90m    at async link (node:internal/modules/esm/module_job:48:21)[39m
+mtullo1@remote-n11:~/projects/i471b/submit/lab1/exercises/calc$ make[K[K[K[K./calc.mjs expn-data.txt 
+file:///import/linux/home1/mtullo1/projects/i471b/submit/lab1/exercises/calc/calc.mjs:72
+  		return * term();
+  		       ^
+
+SyntaxError: Unexpected token '*'
+[90m    at Loader.moduleStrategy (node:internal/modScript started on 2021-02-26 17:21:30-05:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+mtullo1@remote-n15:/import/linux/home1/mtullo1/projects/i471b/submit/lab1$ cd ~
+mtullo1@remote-n15:~$ ls
+ Arduino	 cs375	     EX2.circ   Pictures       'SOP EX1.circ'
+ assignment3_4	 cs428	     i471b     'POS EX1.circ'  'SOP XOR.circ'
+ cs240		 Desktop     lab10     'POS XOR.circ'   Templates
+ cs320		 Documents   lab11      proj2	        tmp
+ cs350		 Downloads   media      projects        Videos
+ cs373		 EX1.circ    Music      Public
+mtullo1@remote-n15:~$ cd P[Kprojects/cs471
+mtullo1@remote-n15:~/projects/cs471$ ls
+announce.html  bin	  hws	      labs	README.md
+announce.umt   docs	  index.html  misc	slides
+assets	       exercises  index.umt   projects	umt.make
+mtullo1@remote-n15:~/projects/cs471$ cd labs/lab1
+mtullo1@remote-n15:~/projects/cs471/labs/lab1$ ls
+exercises  syntax  syntax.html	syntax.pdf  syntax.umt
+mtullo1@remote-n15:~/projects/cs471/labs/lab1$ cd exercises/lexer/
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/lexer$ ls
+data.txt  lexer.mjs  lexer.py
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/lexer$ get[Kdit leser.m[K[K[K[K[Kc[Kxw[Ker.
+lexer.mjs  lexer.py   
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/lexer$ gedit lexer.mjs & [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K&
+[1] 3400454
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/lexer$ ls
+data.txt  lexer.mjs  lexer.py
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/lexer$ cd ..
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises$ ls [K[K[Kcd calc/
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ ls
+calc.mjs  calc.py  data.txt  expn-data.txt
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ gedit calc.mjs &
+[2] 3400815
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ 
+(gedit:3400454): Gtk-[1;33mWARNING[0m **: [34m17:24:42.733[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+
+[2]+  Done                    gedit calc.mjs
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ ./l[KC[Kcalc.mjs d[Kec[Kxpn-data.txt 
+file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:99
+}
+^
+
+SyntaxError: Unexpected token '}'
+[90m    at Loader.moduleStrategy (node:internal/modules/esm/translators:147:18)[39m
+[90m    at async link (node:internal/modules/esm/module_job:48:21)[39m
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ ./calc.mjs expn-data.txt 
+file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:99
+}
+^
+
+SyntaxError: Unexpected token '}'
+[90m    at Loader.moduleStrategy (node:internal/modules/esm/translators:147:18)[39m
+[90m    at async link (node:internal/modules/esm/module_job:48:21)[39m
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ ./calc.mjs expn-data.txt 
+file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:87
+    if (check('INT')) {
+    ^
+
+ReferenceError: check is not defined
+    at factor (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:87:5)
+    at term (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:73:19)
+    at expr (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:58:13)
+    at program (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:51:19)
+    at parse (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:29:17)
+    at main (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:128:17)
+    at file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:144:1
+[90m    at ModuleJob.run (node:internal/modules/esm/module_job:154:23)[39m
+[90m    at async Loader.import (node:internal/modules/esm/loader:166:24)[39m
+[90m    at async Object.loadESM (node:internal/process/esm_loader:68:5)[39m
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ ./calc.mjs expn-data.txt 
+expecting ( at **
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ c;eat
+bash: c: command not found
+bash: eat: command not found
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ cleart
+bash: cleart: command not found
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ clear
+[H[2J[3Jmtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ clear
+[H[2J[3Jmtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ cleart[1P;eat./calc.mjs expn-data.txt 
+expecting ( at **
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ cat expn-data.txt  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K 
+-2 ** 2 ** 3 ;
+1 + 2**(1 + 2) ;
+1 + -2**(1 + 2) ;
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ cat expn-data.txt  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K 
+-2 ** 2 ** 3 ;
+1 + 2**(1 + 2) ;
+1 + -2**(1 + 2) ;
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ cat expn-data.txt  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./calc.mjs expn-data.txt 
+expecting ( at **
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ ./calc.mjs expn-data.txt 
+expecting ( at **
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ ./calc.mjs expn-data.txt 
+expecting ( at **
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ ./calc.mjs expn-data.txt 
+expecting ( at **
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ ./calc.mjs expn-data.txt 
+expecting ( at **
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ ./calc.mjs expn-data.txt 
+file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:32
+  function check(kind) { return lookahead.kind === kind; }
+                ^
+
+RangeError: Maximum call stack size exceeded
+    at check (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:32:17)
+    at term (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:69:9)
+    at term (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:78:6)
+    at term (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:78:6)
+    at term (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:78:6)
+    at term (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:78:6)
+    at term (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:78:6)
+    at term (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:78:6)
+    at term (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:78:6)
+    at term (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:78:6)
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ ./calc.mjs expn-data.txt 
+file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:32
+  function check(kind) { return lookahead.kind === kind; }
+                ^
+
+RangeError: Maximum call stack size exceeded
+    at check (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:32:17)
+    at term (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:69:9)
+    at term (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:78:6)
+    at term (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:78:6)
+    at term (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:78:6)
+    at term (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:78:6)
+    at term (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:78:6)
+    at term (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:78:6)
+    at term (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:78:6)
+    at term (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:78:6)
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ ./calc.mjs expn-data.txt 
+file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:77
+   		const kind = lookahead.kind;
+   		      ^
+
+SyntaxError: Identifier 'kind' has already been declared
+[90m    at Loader.moduleStrategy (node:internal/modules/esm/translators:147:18)[39m
+[90m    at async link (node:internal/modules/esm/module_job:48:21)[39m
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ ./calc.mjs expn-data.txt 
+expecting ( at **
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ ./calc.mjs expn-data.txt 
+expecting ( at **
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ ./calc.mjs expn-data.txt 
+expecting ( at **
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ ./calc.mjs expn-data.txt 
+expecting ( at **
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ ./calc.mjs expn-data.txt 
+expecting ( at **
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ ./calc.mjs expn-data.txt 
+expecting ( at **
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ ./calc.mjs expn-data.txt 
+expecting ( at **
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ ./calc.mjs expn-data.txt 
+expecting ( at **
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ ./calc.mjs expn-data.txt 
+expecting ( at **
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ ^[[A[K[K[KI[K./calc.mjs expn-data.txt 
+expecting ( at **
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ ./calc.mjs expn-data.txt 
+expecting ( at **
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ ./calc.mjs expn-data.txt 
+file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/calc/calc.mjs:90
+    else if (check('INT')) {
+    ^^^^
+
+SyntaxError: Unexpected token 'else'
+[90m    at Loader.moduleStrategy (node:internal/modules/esm/translators:147:18)[39m
+[90m    at async link (node:internal/modules/esm/module_job:48:21)[39m
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ ./calc.mjs expn-data.txt 
+you dumb slut
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ ./calc.mjs expn-data.txt 
+you dumb slut
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ ./calc.mjs expn-data.txt 
+[ [33m-256[39m, [33m9[39m, [33m-7[39m ]
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/calc$ cd ..
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises$ cd ast/
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/ast$ ls
+ast.mjs  ast.py  data.json  data.txt  expn-data.json  expn-data.txt
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/ast$ ./ast.mjs  g[Kdata.json 
+expecting ( at [
+[1]+  Done                    gedit lexer.mjs  (wd: ~/projects/cs471/labs/lab1/exercises/lexer)
+(wd now: ~/projects/cs471/labs/lab1/exercises/ast)
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/ast$ ./ast.mjs data.txt  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K 
+[{"tag":"-","kids":[{"tag":"+","kids":[{"tag":"INT","kids":[],"value":1},{"tag":"INT","kids":[],"value":2}]},{"tag":"INT","kids":[],"value":3}]},{"tag":"-","kids":[{"tag":"-","kids":[{"tag":"-","kids":[{"tag":"INT","kids":[],"value":2}]}]},{"tag":"-","kids":[{"tag":"INT","kids":[],"value":3},{"tag":"INT","kids":[],"value":4}]}]}]
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/ast$ gedit ast.mjs &
+[1] 3410857
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/ast$ 
+(gedit:3410857): Gtk-[1;33mWARNING[0m **: [34m18:04:21.072[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/ast$ ./m[Kast.mjs d[Kexpn-data.txt 
+file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/ast/ast.mjs:86
+    return new Ast(kind, factor1, factor2);
+                   ^
+
+ReferenceError: kind is not defined
+    at term (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/ast/ast.mjs:86:20)
+    at term (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/ast/ast.mjs:81:21)
+    at term (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/ast/ast.mjs:71:27)
+    at expr (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/ast/ast.mjs:58:13)
+    at program (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/ast/ast.mjs:51:17)
+    at parse (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/ast/ast.mjs:29:17)
+    at main (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/ast/ast.mjs:134:17)
+    at file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/ast/ast.mjs:155:1
+[90m    at ModuleJob.run (node:internal/modules/esm/module_job:154:23)[39m
+[90m    at async Loader.import (node:internal/modules/esm/loader:166:24)[39m
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/ast$ [Kmtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/ast$ [Kmtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/ast$ [Kmtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/ast$ [Kmtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/ast$ [Kmtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/ast$ [Kmtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/ast$ [Kmtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/ast$ [Kmtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/ast$ ./ast.mjs expn-data.txt 
+file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/ast/ast.mjs:86
+    return new Ast('**', factor1, factor2);
+                                  ^
+
+ReferenceError: factor2 is not defined
+    at term (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/ast/ast.mjs:86:35)
+    at term (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/ast/ast.mjs:81:21)
+    at term (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/ast/ast.mjs:71:27)
+    at expr (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/ast/ast.mjs:58:13)
+    at program (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/ast/ast.mjs:51:17)
+    at parse (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/ast/ast.mjs:29:17)
+    at main (file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/ast/ast.mjs:134:17)
+    at file:///import/linux/home1/mtullo1/projects/cs471/labs/syntax/exercises/ast/ast.mjs:155:1
+[90m    at ModuleJob.run (node:internal/modules/esm/module_job:154:23)[39m
+[90m    at async Loader.import (node:internal/modules/esm/loader:166:24)[39m
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/ast$ ./ast.mjs expn-data.txt 
+[{"tag":"-","kids":[{"tag":"**","kids":[{"tag":"INT","kids":[],"value":2},null]}]},{"tag":"+","kids":[{"tag":"**","kids":[{"tag":"INT","kids":[],"value":1},null]},{"tag":"**","kids":[{"tag":"INT","kids":[],"value":2},{"tag":"+","kids":[{"tag":"**","kids":[{"tag":"INT","kids":[],"value":1},null]},{"tag":"**","kids":[{"tag":"INT","kids":[],"value":2},null]}]}]}]},{"tag":"+","kids":[{"tag":"**","kids":[{"tag":"INT","kids":[],"value":1},null]},{"tag":"-","kids":[{"tag":"**","kids":[{"tag":"INT","kids":[],"value":2},{"tag":"+","kids":[{"tag":"**","kids":[{"tag":"INT","kids":[],"value":1},null]},{"tag":"**","kids":[{"tag":"INT","kids":[],"value":2},null]}]}]}]}]}]
+mtullo1@remote-n15:~/projects/cs471/labs/lab1/exercises/ast$ cd ~/[K/projects/i471b/l[Ksubmit/lab1
+[1]+  Done                    gedit ast.mjs  (wd: ~/projects/cs471/labs/lab1/exercises/ast)
+(wd now: ~/projects/i471b/submit/lab1)
+mtullo1@remote-n15:~/projects/i471b/submit/lab1$ exit
+
+Script done on 2021-02-26 18:18:15-05:00 [COMMAND_EXIT_CODE="0"]

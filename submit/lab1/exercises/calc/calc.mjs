@@ -14,6 +14,7 @@ expr
   ;
 term
   : '-' term
+  : '*' term
   | factor
   ;
 factor
@@ -70,9 +71,18 @@ function parse(text) {
       match('-');
       return - term();
     }
-    else {
-      return factor();
-    }
+    let f = factor();
+		while(check('**')){
+			let  f2 = factor();
+			if(check('**')){
+				const kind = lookahead.kind;
+				match(kind);
+				let f3 = term();
+				f2**=f3;
+			}
+			f **=f2;
+		}
+    return f;
   }
 
   function factor() {
@@ -99,6 +109,9 @@ function scan(text) {
     }
     else if ((m = text.match(/^\d+/))) {
       tokens.push(new Token('INT', m[0]));
+    }
+    else if ((m = text.match(/\*\*/))){
+    	tokens.push(new Token(m[0], m[1]));
     }
     else {
       m = text.match(/^./);

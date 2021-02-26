@@ -17,11 +17,14 @@ from collections import namedtuple
 #should be ignored, kind should be returned as None.
 #note that m.group() gives lexeme after a successful match
 def next_match(text):
-    m = re.compile(r'\s+').match(text)
+    m = re.compile(r'(\/\/.*)|\s+').match(text)
     if (m): return (m, None)  #None kind means ignore
 
     m = re.compile(r'\d+').match(text)
     if (m): return (m, 'INT')
+    
+    m = re.compile(r'\w+').match(text)
+    if (m): return (m, 'ID')
 
     m = re.compile(r'.').match(text)  #must be last: match any char
     if (m): return (m, m.group())
