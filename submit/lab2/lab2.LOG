@@ -1,0 +1,352 @@
+Script started on 2021-03-04 13:02:26-05:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="80" LINES="24"]
+mtullo1@remote-n33:~/projects/i471b/submit/lab2$ ls
+lab2  lab2.LOG
+mtullo1@remote-n33:~/projects/i471b/submit/lab2$ cd lab2
+bash: cd: lab2: No such file or directory
+mtullo1@remote-n33:~/projects/i471b/submit/lab2$ cd lab2
+bash: cd: lab2: No such file or directory
+mtullo1@remote-n33:~/projects/i471b/submit/lab2$ ls
+lab2  lab2.LOG
+mtullo1@remote-n33:~/projects/i471b/submit/lab2$ cd //[K[K..
+mtullo1@remote-n33:~/projects/i471b/submit$ cd ..
+mtullo1@remote-n33:~/projects/i471b$ ls
+README.md  submit
+mtullo1@remote-n33:~/projects/i471b$ cd ..
+mtullo1@remote-n33:~/projects$ c[Kcd cs471
+mtullo1@remote-n33:~/projects/cs471$ cd labs/[K/lab2/
+mtullo1@remote-n33:~/projects/cs471/labs/lab2$ ls
+scheme1  scheme1.html  scheme1.pdf  scheme1.umt
+mtullo1@remote-n33:~/projects/cs471/labs/lab2$ racket [K
+Welcome to Racket v7.9 [bc].
+> (+ 1 (/12) [13G[12G[K[11G[K 2) (/1 3)[17G 1 3)[10G[1@ 11 2) (/ 1 3) 9[24G[K(/ 1 4) (/ 1 5))
+137/60
+> > (+ 1 (/ 1 2) (/ 1 3) (/ 1 4) (/ 1 5))[7G[1@. [8G[1@0 
+2.283333333333333
+> (> [K*> [K(* 3 (ep[10G[Kcp[11G[K[10G[Kxpt x 3 [17G[16G[K[15G[14G[K[13G[12G[K[11G[K[10G[K[9G[K[8G[K[7G[6G[K> (*> ([K +> ( [K> (+ (* 3 (expt x 3[19G[K3_[20G[K) [21G) (* -2 (expt x 2) [39G) (*4[43G[K 4 x [47G) (-1)
+  )
+; x: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> x = 4
+; x: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+#<procedure:=>
+4
+> > x = 4> (+ (* 3 (expt x 3)) (* -2 (expt x 2)) (* 4 x) (-1)
+  )
+; x: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> > (+ (* 3 (expt x 3)) (* -2 (expt x 2)) (* 4 x) (-1)
+  )[A[53Gx[46G[P)[46G[1@4)[35G[P [35G[1@5 [35G[P [35G[1@4 [18G[P3[17G[P3[17G[1@43[18G[1@ 3
+
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: -1
+; [,bt for context]
+> > (+ (* 3 (expt 4 3)) (* -2 (expt 4 2)) (* 4 4) (-1)
+  )[A[53G)> [K
+[K[A> > (+ (* 3 (expt 4 3)) (* -2 (expt 4 2)) (* 4 4) (-1)
+  )  [K [K[A[53Gzzzzz[57G[K[56G[K[55G[K[54G[K[53G[K)
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: -1
+; [,bt for context]
+> > (+ (* 3 (expt 4 3)) (* -2 (expt 4 2)) (* 4 4) (-1))
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: -1
+; [,bt for context]
+> > (+ (* 3 (expt 4 3)) (* -2 (expt 4 2)) (* 4 4) (-1))1[50G1))[K
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 1
+; [,bt for context]
+> > (+ (* 3 (expt 4 3)) (* -2 (expt 4 2)) (* 4 4) (1)) 4) (1))[52G[K[51G[K[50G[K[49G[K[48G )
+176
+> > (+ (* 3 (expt 4 3)) (* -2 (expt 4 2)) (* 4 4) )[49G[K1 )
+177
+> (* 1000 ( [12G+ (.05[17G[K[16G[K[15G[K/ .05 1)[15G[1@(/[15G[1@e([16G[1@x([17G[1@p([17G[P([16G[P([15G[P([15G[P/[14G[1@1([15G[1@ ([12G[1@(+[13G[1@e+[14G[1@x+[15G[1@p+[16G[1@t+[17G[1@(+[18G[1@/+[18G[P++ 1 ( 1 (/ .05 1)[18G[1@(+[12G[Pe(expt((+ 1 (/ .05 1)) (*1[35G[K 1 5))))
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 1.05
+; [,bt for context]
+> > (* 1000 (expt((+ 1 (/ .05 1)) (* 1 5))))[42G[K
+  )
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 1.05
+; [,bt for context]
+> > (* 1000 (expt((+ 1 (/ .05 1)) (* 1 5)))
+  )  [K [K[A[42G))
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 1.05
+; [,bt for context]
+; readline-input:18:40: read-syntax: unexpected `)` [,bt for context]
+> > (* 1000 (expt((+ 1 (/ .05 1)) (* 1 5)))))[43G[K
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 1.05
+; [,bt for context]
+> > (* 1000 (expt((+ 1 (/ .05 1)) (* 1 5))))JJJJJJJJJJJJ[54G[K[53G[K[52G[K[51G[K[50G[K[49G[K[48G[K[47G[K[46G[K[45G[K[44G[K[43G[K[40G )))> [K> (* 1000 (expt((+ 1 (/ .05 1)) (* 1 5))))[40G )))> [K> (* 1000 (expt((+ 1 (/ .05 1)) (* 1 5))))[40GC)))[40G)))[K[40G ))))[42G )))[44G )
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 1.05
+; [,bt for context]
+> > (* 1000 (expt((+ 1 (/ .05 1)) (* 1 5) ) ) ).055 1)) (* 1 5) ) ) )[45G[K[44G[43G[K[42G[41G[K[40G[39G[K[38G[K[37G[36G[K[35G[34G[K[33G[K[32G[31G[K[30G[K[29G[K[28G[27G[K[26G[K[25G[K[24G[23G[K[22G[K[21G[20G[K[19G[18G[K[17G[K[16G[K[15G[K[14G[K[13G[K[12G[K[11G[K[10G[9G[K[8G[K[7G[K[6G[K1000 ([11G[K*[11G[K([11G[KE[11G[Kexpt [15G((+1 (/.05[24G[K[23G[K[22G[K .05 1 [28G) (* 1 5_[36G[K)))
+  )
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 1
+; [,bt for context]
+> > (* 1000 expt((+1 (/ .05 1) (* 1 5)))
+  )  [K [K[A[39G[29G[1@) 
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 1
+; [,bt for context]
+> > (* 1000 expt((+1 (/ .05 1)) (* 1 5)))[39G[K[38G[K[37G[K[36G[K[35G[34G[K[33G[32G[K[31G[K[30G[29G[K[28G[K[27G[K[26G[25G[K[24G[K[23G[K[22G[21G[K[20G[K[19G[18G[K[17G[K[16G[K[15G[K[14G[K[13G[K[12G[K[11G[K[10G[9G[K[8G[K[7G[K[6G[K> (*> ([K> [K(* 1000 (expt [16G (+ 1 (/ .o5 1[29G[K[28G[27G[K[26G[K05 1)) (5[34G[K*5[35G[K 5 1 [39G) [40G))
+1276.2815625000003
+> define list 1 '(1 2 3 4 5 ))> [1@(d
+; readline-input:25:0: define: bad syntax (multiple expressions after
+;   identifier)
+;   in: (define list 1 (quote (1 2 3 4 5)))
+; [,bt for context]
+> (f> ([Kdefine list1 '(1 2 3 4 5 [28G))
+> (define list2 ,(a b d[23G[Kc d e [28G))
+; readline-input:27:14: unquote: not in quasiquote
+;   in: (unquote (a b c d e))
+; [,bt for context]
+> > (define list2 ,(a b c d e))[17G[P([17G[1@'(
+> (car list1)
+1
+> ca> c[Kdr(list[10G[K[9G[K[8G[K[7G[K[6G[K> cd[K> c[K> [K<cdr list[11G[K[10G[K[9G[K[8G[K[7G[6G[K> <c[K> <[K> [K(cdr list1)
+'(2 3 4 5)
+> (cs> (c[Kar list2)
+'a
+> cdr [6G> cd[K> c[K> [K(cdr list 2[13G[K[12G2)
+'(b c d e)
+> c> [K(car )cdr [12G[11G[K[10G[K[9G[K[8G[K[7G ccdr([12G[K[11G[K[10G[K[9G[K[8G[K)[8G[K(cdr (cdr list1)))
+3
+> (append list1 list 2)
+; append: contract violation
+;   expected: list?
+;   given: #<procedure:list>
+; [,bt for context]
+> append l[10G[K[9G[8G[K[7G[K[6G[K> ap[K> a[K> [K(append lsit[14G[K[13G[K[12G[Kist [15G1 lu[18G[Kist2)
+'(1 2 3 4 5 a b c d e)
+> car> ca[K> c[K> [K(car (cdr list2))
+'b
+> CA> C[K> [Kcr> c[K> [K(car (car (car (list2)))
+  )
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: '(a b c d e)
+; [,bt for context]
+> (car (car ([13G[K[12G[11G[K[10G[K[9G[K[8G[Klist2)
+'a
+> car([6G[K> ca[K> c[K> [K(car (car (list2))
+  )
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: '(a b c d e)
+; [,bt for context]
+> (car [7G[6G[K> (c[K> ([K> [Kcdr> cd[K> c[K> [K(cdr list2)
+'(b c d e)
+> cdr> cd[K> c[K> [Kcdr> cd[K> c[K> [K(cdr c[8G[K(cdr (cdr(list2))))
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: '(a b c d e)
+; [,bt for context]
+> /////> (cdr (cdr (cdr(list2))))[26G[K
+  
+  )
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: '(a b c d e)
+; [,bt for context]
+> (car (dcr [12G[11G[K[10G[K[9G[Kdc[10G[K[9G[Kcdr list1))
+2
+> car> ca[K> c[K> [Kcdr ([7G[K[6G> cd[K> c[K> [K(cdr c[8G[K(cdr list1 [18G))
+'(3 4 5)
+> (cdr cd[9G[K[8G[K[7G (cdr (cdr list1)))
+'(4 5)
+> (cd> (c[K> ([K> [Kappend [9G[8G[K[7G[K[6G[K> ap[K> a[K> [K(append (cdr (cdrli[21G[K[20G[K list1)) (cdr (cdr (cdr list2))))
+'(3 4 5 d e)
+> define (r[11G[K[10G[K[9G[8G[K[7G[K[6G[K> de[K> d[K> [K(define (rect-area width he[29G[Keight [34G) (*width height))
+> re> r[K> [K(rect-area 4 5 [17G)
+; *width: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> (rect-area 4 5 [17G)
+; *width: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> (define (rect-area width height) (* width height))
+> rect [7G[6G[K> re[K> r[K> [K(rect-area 4 5 [17G)
+20
+> (define line-length (expt (x[30G[K[29G[K[28G[27G[K[26G[K[25G[K[24G[K[23G[Kx1 x2 [28G[27G[K[26G[Ky1 x2 y2) (expt([41G[K (expt (c1[50G[K[49G[Kx[49G[K[48G[K(+ x1 x2[55G[K[54G[K[53G[52G[K[51G[K[50G[49G[K- x1 x2) 2)[49G[1@(-[49G[1@+([50G[1@ ((- x1 x2) 2)+[49G[P [48G[P [48G[P([43G[1@(e[43G[1@+([44G[1@ ((expt (- x1 x2) 2) (expt (1 y1 y2[77G[K[76G[K[75G[74G[K[73G[K[72G[71G[K_[71G[K0[71G[K- y1 y2) 2 )))[K
+[K[A) ) .5)
+; readline-input:56:0: define: bad syntax (multiple expressions after
+;   identifier)
+;   in: (define line-length x1 y1 x2 y2)
+; [,bt for context]
+; x1: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> ; user break [,bt for context]
+gedut     ^[[A    
+
+> > (define line-length x1 y1 x2 y2) (expt (+ (expt (- x1 x2) 2) (expt (- y1 y2) 2 ) ) .5)[A[80G[11G[1@([80G[K
+[1@2)[A[12G
+
+  )
+> line [7G-length 7 4 10 8
+#<procedure:line-length>
+7
+4
+10
+8
+> 
+  
+  line [7G-length
+#<procedure:line-length>
+> ; user break [,bt for context]
+
+
+> (define (rect-area width height) (* width height))(define (line-length x1 y1 x 2 y2) (expt (+ (expt (- x1 x2) 2) (expt (- y1 y2)
+
+> 2) ) .5)
+  )
+> 
+  
+  
+  
+  )
+; readline-input:72:0: read-syntax: unexpected `)` [,bt for context]
+> (define (rect-area width height) (* width height))(define (line-length x1 y1 x 2 y2) (expt (+ (expt (- x1 x2) 2) (expt (- y1 y2)
+
+> 
+  
+  
+  
+  
+[1]+  Stopped                 racket
+mtullo1@remote-n33:~/projects/cs471/labs/lab2$ racket
+Welcome to Racket v7.9 [bc].
+> de> d[K> [K(define (line-length ([24G[Kx1 x2 x[30G[Ky1 y3[34G[K2) (ep[39G[Kxpt (+ (expr[50G[Kt (1[53G[K- x1 cw[59G[K2[59G[K[58G[Kx2[27G[P2[27G[P [27G[1@y [28G[1@1  y[30G[P1[30G[1@x1[31G[P [31G[1@2  y2) (expt (+ (expt (- x1 x2) 2) (expt(1[71G[K- (y1 y2)  2) .5))
+
+  )
+  )
+> line le[9G[K[8G[K[7G-length 7 4 10 8
+#<procedure:line-length>
+7
+4
+10
+8
+> (define line-length [22G[21G[K[20G[K[19G[K[18G[K[17G[K[16G[K[15G[K[14G[K[13G[K[12G[K[11G[K(line-length x1 y1 x2 y2) (sqrt (expt (- x1 x2) 2[59G[K[58G[57G[K[56G[K[55G[K[54G[53G[K[52G[K[51G[50G[K[49G[K[48G[47G[K[46G[K[45G[K[44G[K+ (expt x1 [54G[53G[K[52G[K[51G (x[53G[K- c1[56G[K[55G[Kx1 cx[59G[K[58G[Kx2) 2 [63G) (exx[68G[Kpt )[71G[K(- x1[75G[K[74G[Ky1 y2)  2)))
+
+  )
+> line [7G-length 7 4 10 8
+#<procedure:line-length>
+7
+4
+10
+8
+> (line [8G-length 7 4 10 8)
+5
+> (define (line-length list [28G1[28G[K[27G[K[26G[K[25G[K[24G[Kl1 l2) (sqrt (+ (expt (- car[51G[K[50G[K[49G[K(car l1) (car l2)) 2) (expt (-1[79G[K ( cdr l1 
+[K[A[7G[6G[Kcdr [Kcdrcd[Kc[K[K[A[80G[K
+[K[A[80G( cdr l1) (cdr l2)) 2))))
+
+> linbe[7G[K[6G[K> li[K> l[K> [K(dei[6G[Kfine coord1( [18G[17G[K '( [20G7 4)[23G[K[22G[K[21G[20G[K[19G[K[18G[K[17G[16G[K[15G[K[14G[K[13G[K[12G[K[11G[K[10G[9G[K[8G[K[7G[K[6G[K> (d[K> ([K> [Kline-length '(l[17G[K7 4) '(10 8))> [1@(l
+; -: contract violation
+;   expected: number?
+;   given: '(4)
+;   argument position: 1st
+; [,bt for context]
+> (define coord
+[2]+  Stopped                 racket
+mtullo1@remote-n33:~/projects/cs471/labs/lab2$ re[Kacket
+Welcome to Racket v7.9 [bc].
+> line[6G[K> li[K> l[K> [K(line-length 7 4 10 8)
+; line-length: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> (define (line-length l1 l2) (sqrt (+ (expt (- (car l1) (car l2)) 2) (expt (- ( cdr l1) (cdr l2)) 2))))
+
+> 
+    (define (line-length l1 l2) (sqrt (+ (expt (- (car l1) (car l2)) 2) (expt (- ( cdr l1) (cdr l2)) 2))))[A  ([8P[16G7 4 10 8)[K
+[K[A[25G
+; line-length: arity mismatch;
+;  the expected number of arguments does not match the given number
+;   expected: 2
+;   given: 4
+; [,bt for context]
+> (line[7G[K[6G[K> (l[K> ([K> [Kcoord[7G[K[6G[K> co[Kr> co[K> c[Krd1[6G[K> cr[K> c[K> [K(crd[6G[K> (c[K> ([Ke> ([Kdefine crd1 '(1 2))
+> car d[7G[Kcrd1
+#<procedure:car>
+'(1 2)
+> cdr crd1
+#<procedure:cdr>
+'(1 2)
+> car [6G> ca[K> c[K> [K(car crd1)
+1
+> c> [K(cdr crd1)
+'(2)
+> cdr> cd[K> c[K> [K(cdr c[8G[K(car crd1))
+; cdr: contract violation
+;   expected: pair?
+;   given: 1
+; [,bt for context]
+> car [6G> ca[K> c[K> [K(car (cdr([12G[K crd1))
+2
+> > (car (cdr crd1))> (cdr (ca[19G[8G[5Pcrd1)[K> (ca[13G> cdr crd1[K> ca[11G> (define crd1 '(1 2))> (line-length 7 4 10 8)> (define crd1 '(1 2))[K> (line-length 7 4 10 8)> ([8@define ([24Gl1 l2) (sqrt (+ (expt (- (car l1) (car l2)) 2) (expt (- ( cdr l1) (cdr l2)) 2))))[10G[1@(c[12G[1@cd[12G[1@ac[13G[1@rc[13G[Pc[12G[Pc[12G[Pd[10G[Pc[9G[1@c([10G[1@a([11G[1@r([13G[1@(c(cdr l2[22G[1@) [8G[1@) [1@(c([1@(c(([1@c((c[1@a((ca[1@r((car[1@ (
+  )
+> l> [K(line [8G-length '(7 4) '(10 8))
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: '(8)
+; [,bt for context]
+> > (line-length '(7 4) '(10 8))> ([8@define ([24Gl1 l2) (sqrt (+ (expt (- (car l1) (car l2)) 2) (expt (- ( (car (cdr l1)) car((cdr l2))) 2))))
+  )[A[36G[20G[Pc[16G[1@(ccar[20G[1@ (
+
+> > (define (line-length l1 l2) (sqrt (+ (expt (- (car l1) (car l2)) 2) (expt (- ( (car (cdr l1)) (car (cdr l2))) 2))))
+  )[2A> ([8P[16G'(7 4) '(10 8))[K
+[K
+[K[2A[31G
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 4
+; [,bt for context]
+> (define (line-length l1 l2) (sqrt (+ (expt [45G (- (car l1) (car l2)) 2) (expt(1[77G[K[76G[K -[77G[K(- (  (car (cdr l1)) c[17G[K
+[K[A[17G(car (cdr l2))))
+  )
+  
+  )
+  
+  )
+  
+  
+  
+  )
+> (line le[10G[K[9G[K[8G[7G[K[6G[K> (l[K> ([K> [K> (define (line-length l1 l2) (sqrt (+ (expt (- (car l1) (car l2)) 2) (expt (- (  (car (cdr l1)) (car (cdr l2))))
+  )
+  )
+  )
+  )[5A> ([8P[16G'(7 4) '(10 8))[K
+[K
+[K
+[K
+[K
+[K[5A[31G
+; applicat
