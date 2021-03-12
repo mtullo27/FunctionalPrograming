@@ -1,0 +1,271 @@
+Script started on 2021-03-11 13:21:45-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+mtullo1@remote-n11:~/projects/i471b/submit/lab3$ cd [K[K[Kgit add .
+mtullo1@remote-n11:~/projects/i471b/submit/lab3$ git xo[K[Kcommit -a 0[K-m "[K"started"
+[lab3 250c4ba] started
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 submit/lab3/lab3.LOG
+mtullo1@remote-n11:~/projects/i471b/submit/lab3$ git push -u origin lab3
+Username for 'https://github.com': mtullo27
+Password for 'https://mtullo27@github.com': 
+Enumerating objects: 6, done.
+Counting objects:  16% (1/6)Counting objects:  33% (2/6)Counting objects:  50% (3/6)Counting objects:  66% (4/6)Counting objects:  83% (5/6)Counting objects: 100% (6/6)Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects:  50% (1/2)Compressing objects: 100% (2/2)Compressing objects: 100% (2/2), done.
+Writing objects:  20% (1/5)Writing objects:  40% (2/5)Writing objects:  60% (3/5)Writing objects:  80% (4/5)Writing objects: 100% (5/5)Writing objects: 100% (5/5), 400 bytes | 40.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'lab3' on GitHub by visiting:[K
+remote:      https://github.com/mtullo27/i471b/pull/new/lab3[K
+remote: 
+To https://github.com/mtullo27/i471b.git
+ * [new branch]      lab3 -> lab3
+Branch 'lab3' set up to track remote branch 'lab3' from 'origin'.
+mtullo1@remote-n11:~/projects/i471b/submit/lab3$ cd lab3.LOG [K[K[K[K[K[K[K[K[K~/projects/L[Kv[Kcs471/labs/lab3
+bash: cd: /home/mtullo1/projects/cs471/labs/lab3: No such file or directory
+mtullo1@remote-n11:~/projects/i471b/submit/lab3$ cd ~
+mtullo1@remote-n11:~$ cd projects/cs471
+mtullo1@remote-n11:~/projects/cs471$ ls
+announce.html  bin	  hws	      labs	README.md
+announce.umt   docs	  index.html  misc	slides
+assets	       exercises  index.umt   projects	umt.make
+mtullo1@remote-n11:~/projects/cs471$ cd labs/
+mtullo1@remote-n11:~/projects/cs471/labs$ ls
+course-setup  index.umt  lab1	   lab2		 scheme1  working
+index.html    lab0	 lab1-sol  presentation  syntax
+mtullo1@remote-n11:~/projects/cs471/labs$ cd ~/projects/i471b/submit/;[Kl[Klab3/
+mtullo1@remote-n11:~/projects/i471b/submit/lab3$ gedit lab3-si[Kol.scm & [K
+[1] 1652825
+mtullo1@remote-n11:~/projects/i471b/submit/lab3$ 
+(gedit:1652825): Gtk-[1;33mWARNING[0m **: [34m13:24:45.798[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+git add .
+[1]+  Done                    gedit lab3-sol.scm
+mtullo1@remote-n11:~/projects/i471b/submit/lab3$ git commit -a -m 'add scm file' [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K'
+[lab3 daaf77e] add scm file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 submit/lab3/lab3-sol.scm
+mtullo1@remote-n11:~/projects/i471b/submit/lab3$ git commit [K[K[K[K[K[K[Kpush -u origin lab3
+Username for 'https://github.com': mtullo27
+Password for 'https://mtullo27@github.com': 
+Enumerating objects: 8, done.
+Counting objects:  12% (1/8)Counting objects:  25% (2/8)Counting objects:  37% (3/8)Counting objects:  50% (4/8)Counting objects:  62% (5/8)Counting objects:  75% (6/8)Counting objects:  87% (7/8)Counting objects: 100% (8/8)Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects:  33% (1/3)Compressing objects:  66% (2/3)Compressing objects: 100% (3/3)Compressing objects: 100% (3/3), done.
+Writing objects:  20% (1/5)Writing objects:  40% (2/5)Writing objects:  60% (3/5)Writing objects:  80% (4/5)Writing objects: 100% (5/5)Writing objects: 100% (5/5), 378 bytes | 189.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/mtullo27/i471b.git
+   250c4ba..daaf77e  lab3 -> lab3
+Branch 'lab3' set up to track remote branch 'lab3' from 'origin'.
+mtullo1@remote-n11:~/projects/i471b/submit/lab3$ gedit [K[K[K[K[K[Kracket [K
+Welcome to Racket v7.9 [bc].
+> (define (qr (a b c)[21G[K[20G[K[19G[18G[K[17G[16G[K[15G[Ka b c) (lis([26G[Kt(+(-[30G[K[29G[K[28G[K[27G[K (+ (- 0 b) (sqrt( [45G- (expt)[52G[K( b 2 [57G[56G[K[55G[54G[K[53G[52G[K b 2) (* 4 a c)))) ()))
+; readline-input:1:68: #%app: missing procedure expression;
+;  probably originally (), which is an illegal empty application
+;   in: (#%app)
+; [,bt for context]
+> > (define (qr a b c) (list (+ (- 0 b) (sqrt(- (expt b 2) (* 4 a c)))) ()))[74G[K[73G[K[72G[K[71G[K))
+> qr 1 2 [9G[8G[K[7G[6G[K> qr> q[K> [K(q > (qr 1 2 3 [12G)
+'(-2.0+2.8284271247461903i)
+> 
+[1]+  Stopped                 racket
+mtullo1@remote-n11:~/projects/i471b/submit/lab3$ gedit lab3-sol.scm 
+mtullo1@remote-n11:~/projects/i471b/submit/lab3$ gedit lab3-sol.scm  &
+[2] 1656259
+mtullo1@remote-n11:~/projects/i471b/submit/lab3$ 
+(gedit:1656259): Gtk-[1;33mWARNING[0m **: [34m13:39:05.273[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+racket
+Welcome to Racket v7.9 [bc].
+> (load "l[11Gab3-sol.scm")
+> (quadratic-roots 3 7 3)
+; *4: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> (quadratic-roots 3 7 2)
+; *4: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> > (quadratic-roots 3 7 2)[24G3)> (load "lab3-sol.scm")[K
+> > (load "lab3-sol.scm")> (quadratic-roots 3 7 2)
+'(-1/3 -2)
+> load [7G[6G[K> lo[K> l[K> [K> (quadratic-roots 3 7 2)> (load "lab3-sol.scm")[K
+; lab3-sol.scm:9:31: read-syntax: unexpected `)` [,bt for context]
+> > (load "lab3-sol.scm")
+; lab3-sol.scm:9:31: read-syntax: unexpected `)` [,bt for context]
+> > (load "lab3-sol.scm")
+; lab3-sol.scm:9:31: read-syntax: unexpected `)` [,bt for context]
+> > (load "lab3-sol.scm")
+; lab3-sol.scm:7:8: read-syntax: expected a `)` to close `(` [,bt for context]
+> > (load "lab3-sol.scm")
+; lab3-sol.scm:6:0: read-syntax: expected a `)` to close `(` [,bt for context]
+> > (load "lab3-sol.scm")
+; lab3-sol.scm:8:16: if: bad syntax
+;   in: (if (= a 0))
+; [,bt for context]
+> > (load "lab3-sol.scm")
+; lab3-sol.scm:6:0: read-syntax: expected a `)` to close `(` [,bt for context]
+> > (load "lab3-sol.scm")
+; lab3-sol.scm:9:31: read-syntax: unexpected `)` [,bt for context]
+> > (load "lab3-sol.scm")
+> (qua[6G[K> (q[K> ([Kquadratic-roots-smart 5 2 1)
+'(-1/5+2/5i -1/5-2/5i)
+> > (quadratic-roots-smart 5 2 1)[31G[K[30G[K[29G[28G[K[27G[26G[K0 2 1)
+'error
+> > (quadratic-roots-smart 0 2 1)[26G5[32G> (load "lab3-sol.scm")[K
+; lamda: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> > (load "lab3-sol.scm")
+> my-s[6G[K> my[K> m[K> [K(my-sqrt 5)
+2207/987
+> > (my-sqrt 5)> (load "lab3-sol.scm")
+> > > (load "lab3-sol.scm")> (my-sqrt 5)[K
+2.2360688956433634
+> > (my-sqrt 5)> (load "lab3-sol.scm")> (quadratic-roots-smart 0 2 1)[31G[K my-sqrt)
+'error
+> > (quadratic-roots-smart 0 2 1 my-sqrt)> (my-sqrt 5)[K> (load "lab3-sol.scm")> (quadratic-roots-smart 0 2 1)[26G5[32G[31G[K my sqrt)
+; my: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> > (quadratic-roots-smart 5 2 1 my sqrt)[34G[Ps[34G[1@-s
+
+)
+)
+()
+)
+^Z[2]   Done                    gedit lab3-sol.scm
+
+[3]+  Stopped                 racket
+mtullo1@remote-n11:~/projects/i471b/submit/lab3$ gedit lab3-sol.scm 
+mtullo1@remote-n11:~/projects/i471b/submit/lab3$ gedit lab3-sol.scm  [K%[K&
+[4] 1668310
+mtullo1@remote-n11:~/projects/i471b/submit/lab3$ 
+(gedit:1668310): Gtk-[1;33mWARNING[0m **: [34m14:26:58.067[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+
+mtullo1@remote-n11:~/projects/i471b/submit/lab3$ loa[K[K[Kracket [K
+Welcome to Racket v7.9 [bc].
+> laod[6G[K> la[K> l[K> [K(load la[11Gb3-sol.scm)
+; lab3-sol.scm: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> > (load lab3-sol.scm)[21G[K")[9G[1@"l
+; lab3-sol.scm:34:54: read-syntax: unexpected `)` [,bt for context]
+> > (load "lab3-sol.scm")
+; lab3-sol.scm:34:54: read-syntax: unexpected `)` [,bt for context]
+> > (load "lab3-sol.scm")
+; lab3-sol.scm:35:42: read-syntax: unexpected `)` [,bt for context]
+> > (load "lab3-sol.scm")
+; lab3-sol.scm:35:41: read-syntax: unexpected `)` [,bt for context]
+> > (load "lab3-sol.scm")
+; lab3-sol.scm:35:41: read-syntax: unexpected `)` [,bt for context]
+> > (load "lab3-sol.scm")
+; lab3-sol.scm:35:41: read-syntax: unexpected `)` [,bt for context]
+> ,bt
+; lab3-sol.scm:35:41: read-syntax: unexpected `)`
+;   context...:
+;    /usr/share/racket/pkgs/xrepl-lib/xrepl/xrepl.rkt:1493:0
+;    /usr/share/racket/collects/racket/repl.rkt:11:26
+> > ,bt> (load "lab3-sol.scm")
+; lab3-sol.scm:35:41: read-syntax: unexpected `)` [,bt for context]
+> > (load "lab3-sol.scm")
+; lab3-sol.scm:35:41: read-syntax: unexpected `)` [,bt for context]
+> > (load "lab3-sol.scm")
+; lab3-sol.scm:35:42: read-syntax: unexpected `)` [,bt for context]
+> > (load "lab3-sol.scm")
+; lab3-sol.scm:35:43: read-syntax: unexpected `)` [,bt for context]
+> > (load "lab3-sol.scm")
+; lab3-sol.scm:35:43: read-syntax: unexpected `)` [,bt for context]
+> > (load "lab3-sol.scm")
+; lab3-sol.scm:35:43: read-syntax: unexpected `)` [,bt for context]
+> > (load "lab3-sol.scm")
+; lab3-sol.scm:35:43: read-syntax: unexpected `)` [,bt for context]
+> > (load "lab3-sol.scm")
+; lab3-sol.scm:35:43: read-syntax: unexpected `)` [,bt for context]
+> clos[6G[Kse
+; close: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> exit
+#<procedure:exit>
+> (exit)
+[4]   Done                    gedit lab3-sol.scm
+mtullo1@remote-n11:~/projects/i471b/submit/lab3$ racket
+Welcome to Racket v7.9 [bc].
+> l> [K(load la[10G[K[9G[K"lab3-sol.c[19G[Kscm")
+; lab3-sol.scm:35:43: read-syntax: unexpected `)` [,bt for context]
+> (exit)
+mtullo1@remote-n11:~/projects/i471b/submit/lab3$ gedit lab3-sol.scm  &
+[4] 1679873
+mtullo1@remote-n11:~/projects/i471b/submit/lab3$ 
+(gedit:1679873): Gtk-[1;33mWARNING[0m **: [34m14:52:55.256[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+gedit lab3-sol.scm  &racket[K
+Welcome to Racket v7.9 [bc].
+> > (exit)> (load "lab3-sol.scm")
+; lab3-sol.scm:35:43: read-syntax: unexpected `)` [,bt for context]
+> (exit)
+mtullo1@remote-n11:~/projects/i471b/submit/lab3$ ls
+lab3.LOG  lab3-sol.scm
+mtullo1@remote-n11:~/projects/i471b/submit/lab3$ gedit greate[Ker.scm[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kracket
+Welcome to Racket v7.9 [bc].
+> (define greater-than 
+  (lambda (ist (n 0))
+  
+Display all 2501 possibilities? (y or n) 
+[K  let ([Rlist '()])
+  
+Display all 2501 possibilities? (y or n) 
+[K  (if (null? ist)
+  
+Display all 2501 possibilities? (y or n) 
+[5]+  Stopped                 racket
+mtullo1@remote-n11:~/projects/i471b/submit/lab3$ racket
+Welcome to Racket v7.9 [bc].
+> l> [K(load "lab3-sol.scm")
+; lab3-sol.scm:35:43: read-syntax: unexpected `)` [,bt for context]
+> > (load "lab3-sol.scm")
+; lab3-sol.scm:31:16: let: bad syntax
+;   in: let
+; [,bt for context]
+> > (load "lab3-sol.scm")
+; lab3-sol.scm:31:16: let: bad syntax
+;   in: let
+; [,bt for context]
+> > (load "lab3-sol.scm")
+; lab3-sol.scm:31:16: let: bad syntax
+;   in: let
+; [,bt for context]
+> > (load "lab3-sol.scm")
+; lab3-sol.scm:31:16: let: bad syntax
+;   in: let
+; [,bt for context]
+> ,bt
+; lab3-sol.scm:31:16: let: bad syntax 
+;   in: let
+;   location...:
+;    lab3-sol.scm:31:16
+;   context...:
+;    /usr/share/racket/collects/racket/private/qq-and-or.rkt:50:20: go
+;    /usr/share/racket/pkgs/xrepl-lib/xrepl/xrepl.rkt:1493:0
+;    [repeats 1 more time]
+;    /usr/share/racket/collects/racket/repl.rkt:11:26
+> > ,bt> (load "lab3-sol.scm")
+; lab3-sol.scm:31:16: let: bad syntax
+;   in: let
+; [,bt for context]
+> > (load "lab3-sol.scm")
+> (greater-than ([17G[K[16G[15G[K[14G[K[13G[K[12G[K[11G[K[10G[K[9G[K[8G[K[7G[K[6G[K> (g[K> ([Kexit)
+[4]   Done                    gedit lab3-sol.scm
+mtullo1@remote-n11:~/projects/i471b/submit/lab3$ exit
+There are stopped jobs.
+mtullo1@remote-n11:~/projects/i471b/submit/lab3$ exit
+
+Script done on 2021-03-11 15:00:06-05:00 [COMMAND_EXIT_CODE="0"]
