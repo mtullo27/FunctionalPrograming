@@ -1,0 +1,337 @@
+Script started on 2021-03-25 15:53:11-04:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="80" LINES="24"]
+mtullo1@remote-n31:~/projects/i471b/submit/lab4$ ged[K[K[Kprolog
+GNU Prolog 1.3.0
+By Daniel Diaz
+Copyright (C) 1999-2007 Daniel Diaz
+| ?- f(Z.   ,      ( head(a, tai;l  l(z, B)(z, B), y Y0 )(a, tail(z, B), Y) = head(_, tail(X,_)(X,_),_)(_, tail(X,_),_)
+.
+
+X = z
+
+yes
+| ?- cons(a, cons(b, cons(c, z))).  = cons(_, cons(_.   , cons(_, X)(_, X))(_, cons(_, X)))(_, cons(_, cons(_, X))).
+
+X = z
+
+yes
+| ?- 
+[1]+  Stopped                 prolog
+mtullo1@remote-n31:~/projects/i471b/submit/lab4$ gedit p[Klab4-sol.pro &
+[2] 2588039
+mtullo1@remote-n31:~/projects/i471b/submit/lab4$ prolog
+GNU Prolog 1.3.0
+By Daniel Diaz
+Copyright (C) 1999-2007 Daniel Diaz
+| ?- length([a, b][a, b])([a, b]).
+uncaught exception: error(existence_error(procedure,length/1),top_level/0)
+| ?- length/2([a, b][a, b])([a, b]).
+uncaught exception: error(syntax_error('user_input:2 (char:9) . or operator expected after expression'),read_term/3)
+| ?- length/2([a,b       (a, b    [a, b][a, b]  , 2)([a, b], 2)
+.
+
+yes
+| ?- length([a\ |b][a|b])([a|b]) , 2)([a|b], 2).
+
+no
+| ?- length({ [a|[b][b]) ][a|[b]], 2)([a|[b]], 2)
+.
+
+yes
+| ?- lengh th) ([a\ |[b|c}}, 2).       ][b|c]][a|[b|c]], 2)([a|[b|c]], 2)
+.
+
+no
+| ?- [ length([A|[B|C][B|C]][A|[B|C]], 2)([A|[B|C]], 2)
+.
+
+C = []
+
+yes
+| ?- length([1, 2, 3, 4, ][1, 2, 3, 4], 4)([1, 2, 3, 4], 4)=  = length([X\ |y Y   _|_|Y) , 4   ][_|_|Y], 4)([_|_|Y], 4).
+uncaught exception: error(syntax_error('user_input:12 (char:38) ] or operator expected in list'),read_term/3)
+| ?- length([1, 2, 3, 4], 4) = length([_|_|Y], 4).|Y], 4). |Y], 4). |Y], 4).
+
+Y = [2,3,4]
+
+yes
+| ?- length([1, 2, 3, 4], 4) = length([_|Y], 4).|Y], 4). L|Y], 4).e|Y], 4).|Y], 4). |Y], 4). l|Y], 4).e|Y], 4).n|Y], 4).|Y], 4). |Y], 4). |Y], 4). _|Y], 4).|YY_Y], 4).Y], 4). Y], 4). |Y], 4).|Y], 4).Y], 4). ZY], 4).|Y], 4).Y], 4).
+uncaught exception: error(syntax_error('user_input:14 (char:38) ] or operator expected in list'),read_term/3)
+| ?- length([1, 2, 3, 4], 4) = length([_|Z|Y], 4).], 4). ], 4). ], 4). [], 4).Y], 4).|], 4).z], 4).], 4). Z], 4).|], 4).], 4). ]], 4).[Y|Z]], 4).
+
+Y = 2
+Z = [3,4]
+
+yes
+| ?- length([1, 2, 3, 4], 4) = length([_|[Y|Z]], 4).ZZ]], 4). ]], 4). ]], 4). ]], 4). ]], 4). {], 4).Y], 4).|], 4).{], 4).X], 4).], 4). x], 4).], 4). ], 4). ], 4). ], 4). ], 4). x], 4).], 4). X], 4).], 4). {], 4).], 4). [], 4).X], 4).|], 4).{], 4).], 4). [], 4).Y], 4).\], 4).], 4). |], 4).Z], 4).]], 4).[Y|Z]]], 4).[X|[Y|Z]]]], 4).[_|[X|[Y|Z]]]], 4).
+uncaught exception: error(syntax_error('user_input:16 (char:47) , or ) expected'),read_term/3)
+| ?- length([1, 2, 3, 4], 4) = length([_|[X|[Y|Z]]]], 4).], 4). ], 4).
+
+X = 2
+Y = 3
+Z = [4]
+
+yes
+| ?- length([1, 2, 3, 4], 4) = length([_|[X|[Y|Z]]], 4).]]], 4). _]]], 4).|[Y|_]]], 4). _|[Y|_]]], 4).|[Y|_]]], 4).
+
+Y = 3
+
+yes
+| ?- length([1, 2, 3, 4], 4) = length([_|[_|[Y|_]]], 4).                  { [_{ \ |  X[X\  Y|X Z][Y|Z]][X[Y|Z]], 4)([X[Y|Z]], 4).
+uncaught exception: error(syntax_error('user_input:19 (char:36) , | ] or operator expected in list'),read_term/3)
+| ?- length([1, 2, 3, 4], 4) = length([X[Y|Z]], 4).X,[Y|Z]], 4). [Y|Z]], 4).[Y|Z]], 4).
+
+no
+| ?- length([1, 2, 3, 4], 4) = length([X, [Y|Z]], 4).length([1, 2, 3, 4], 4) = length([X[Y|Z]], 4).  length([1, 2, 3, 4], 4) = length([X, [Y|Z]], 4).length([1, 2, 3, 4], 4) = length([X[Y|Z]], 4).  length([1, 2, 3, 4], 4) = length([_|[_|[Y|_]]], 4).length([1, 2, 3, 4], 4) = length([X[Y|Z]], 4).     length([1, 2, 3, 4], 4) = length([X, [Y|Z]], 4).              y, _][y, _]     Y, _][Y, _]    |_][Y|_])([Y|_]) , 4)([Y|_], 4)
+.
+
+Y = 1
+
+yes
+| ?- .length([1, 2, 3, 4], 4) = length([Y|_], 4)], 4) = length([Y|_], 4) , 4) = length([Y|_], 4) , 4) = length([Y|_], 4) , 4) = length([Y|_], 4) , 4) = length([Y|_], 4) , 4) = length([Y|_], 4) , 4) = length([Y|_], 4) , 4) = length([Y|_], 4) , 4) = length([Y|_], 4) , 4) = length([Y|_], 4) , 4) = length([Y|_], 4) , 4) = length([Y|_], 4) [[1, 2], 3, 4][[1, 2], 3, 4])([[1, 2], 3, 4])=|_], 4)  = length([[_y |y][_|y]  X][_|X]|y][[_|X]|y]  _][[_|X]|_]. , 4)([[_|X]|_], 4).
+
+no
+| ?- length([[1, 2], 3, 4]) = length([[_|X]|_], 4).|]|_], 4). |_], 4). |_], 4). |_], 4). x_], 4). X|_[X|_ 4). [X|_][X|_], 4)([X|_], 4).
+
+no
+| ?- length([[1, 2], 3, 4]) = length([X|_], 4).XX|__], 4). , 4). Y 4). }4). 4). 4). [X|Y][X|Y]|_|Y]|_) , ][[X|Y]|_], 4)([[X|Y]|_], 4), 3)([[1, 2], 3, 4], 3) = ;eh([[X|Y]|_], 4) h([[X|Y]|_], 4) h([[X|Y]|_], 4)  length([[_\ 4) |X\ ][ ][[_|X]] \ |_][[_|X]|_]. , 3)([[_|X]|_], 3).
+
+X = [2]
+
+yes
+| ?- N = 1+ 2    + 2.
+
+N = 1+2
+
+yes
+| ?- N is 1 + 2
+.
+
+N = 3
+
+yes
+| ?- N is 1 + 2*3
+.
+
+N = 7
+
+yes
+| ?- 5 is 7 mod 2.
+
+no
+| ?- X is 7 mod 2.
+
+X = 1
+
+yes
+| ?- X is -7 mod 3
+.
+
+X = 2
+
+yes
+| ?- N is sqrt(4)(4).
+
+N = 2.0
+
+yes
+| ?- n = pi
+.
+
+no
+| ?- N = pi
+.
+
+N = pi
+
+yes
+| ?- N is pi.
+uncaught exception: error(type_error(evaluable,pi/0),(is)/2)
+| ?- 
+(gedit:2588039): Gtk-[1;33mWARNING[0m **: [34m16:21:33.638[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+
+
+
+
+
+
+.
+
+[3]+  Stopped                 prolog
+mtullo1@remote-n31:~/projects/i471b/submit/lab4$ prolog
+GNU Prolog 1.3.0
+By Daniel Diaz
+Copyright (C) 1999-2007 Daniel Diaz
+| ?- ['lab4-sol.pro']['lab4-sol.pro'].
+compiling /import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro for byte code...
+/import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro compiled, 8 lines read - 1966 bytes written, 6 ms
+
+(1 ms) yes
+| ?- quadratic_roots(2, 5, 2, Z)(2, 5, 2, Z).
+uncaught exception: error(existence_error(procedure,quadratic_roots/4),top_level/0)
+| ?- quadratic_roots(2, 5, 2, Z)(2, 5, 2, Z).
+uncaught exception: error(existence_error(procedure,quadratic_roots/4),top_level/0)
+| ?- quadratic_roots(2, 5, 2, Z).['lab4-sol.pro'].           quadratic_roots(2, 5, 2, Z).['lab4-sol.pro'].           
+compiling /import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro for byte code...
+/import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro:1-8: warning: singleton variables [P] for quadratic_roots/5
+/import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro compiled, 8 lines read - 1863 bytes written, 5 ms
+
+yes
+| ?- ['lab4-sol.pro'].quadratic_roots(2, 5, 2, Z).
+uncaught exception: error(existence_error(procedure,quadratic_roots/4),top_level/0)
+| ?- quadratic_roots(2, 5, 2, Z).['lab4-sol.pro'].           
+compiling /import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro for byte code...
+/import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro:1-8: warning: singleton variables [P] for quadratic_roots/4
+/import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro compiled, 8 lines read - 1839 bytes written, 8 ms
+
+yes
+| ?- ['lab4-sol.pro'].quadratic_roots(2, 5, 2, Z).
+
+Z = -0.5
+
+yes
+| ?- quadratic_roots(2, 5, 2, Z).['lab4-sol.pro'].           
+compiling /import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro for byte code...
+/import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro:1-8: warning: singleton variables [P] for quadratic_roots/4
+/import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro compiled, 8 lines read - 1839 bytes written, 7 ms
+
+yes
+| ?- ['lab4-sol.pro'].quadratic_roots(2, 5, 2, Z).
+
+Z = -0.5
+
+yes
+| ?- quadratic_roots(2, 5, 2, Z).['lab4-sol.pro'].           
+compiling /import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro for byte code...
+/import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro:1-8: warning: singleton variables [P] for quadratic_roots/4
+/import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro:9: warning: singleton variables [Z,P] for (=)/2
+/import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro compiled, 9 lines read - 1899 bytes written, 9 ms
+error: /import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro:9: native code procedure (=)/2 cannot be redefined (ignored)
+
+yes
+| ?- ['lab4-sol.pro'].
+compiling /import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro for byte code...
+/import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro:1-8: warning: singleton variables [P] for quadratic_roots/4
+/import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro compiled, 9 lines read - 1823 bytes written, 6 ms
+
+yes
+| ?- ['lab4-sol.pro'].quadratic_roots(2, 5, 2, Z).
+
+Z = -0.5
+
+yes
+| ?- quadratic_roots(2, 5, 2, Z).['lab4-sol.pro'].           
+compiling /import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro for byte code...
+/import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro:1-8: warning: singleton variables [R] for quadratic_roots/4
+/import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro compiled, 9 lines read - 1823 bytes written, 9 ms
+
+(1 ms) yes
+| ?- ['lab4-sol.pro'].quadratic_roots(2, 5, 2, Z).
+
+Z = -2.0
+
+(1 ms) yes
+| ?- quadratic_roots(2, 5, 2, Z).['lab4-sol.pro'].           
+compiling /import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro for byte code...
+/import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro compiled, 9 lines read - 1893 bytes written, 8 ms
+
+(1 ms) yes
+| ?- ['lab4-sol.pro'].quadratic_roots(2, 5, 2, Z).
+
+Z = [-2.0|-0.5]
+
+yes
+| ?- quadratic_roots(2, 5, 2, Z).['lab4-sol.pro'].           
+compiling /import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro for byte code...
+/import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro compiled, 9 lines read - 1932 bytes written, 9 ms
+
+(1 ms) yes
+| ?- ['lab4-sol.pro'].quadratic_roots(2, 5, 2, Z).
+
+Z = [-2.0,-0.5]
+
+yes
+| ?- quadratic_roots(2, 5, 2, Z).['lab4-sol.pro'].           
+compiling /import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro for byte code...
+/import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro compiled, 10 lines read - 2296 bytes written, 6 ms
+
+(1 ms) yes
+| ?- ['lab4-sol.pro'].quadratic_roots(2, 5, 2, Z).
+
+Z = -2.0 ? 
+
+yes
+| ?- quadratic_roots(2, 5, 2, Z).['lab4-sol.pro'].           
+compiling /import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro for byte code...
+/import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro:9:1: syntax error: . or operator expected after expression
+	1 error(s)
+compilation failed
+
+(1 ms) no
+| ?- ['lab4-sol.pro'].
+compiling /import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro for byte code...
+/import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro:1-9: warning: singleton variables [Q] for quadratic_roots/4
+/import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro compiled, 10 lines read - 1845 bytes written, 8 ms
+
+(1 ms) yes
+| ?- ['lab4-sol.pro'].quadratic_roots(2, 5, 2, Z).
+
+Z = -2.0
+
+yes
+| ?- quadratic_roots(2, 5, 2, Z).
+
+Z = -2.0
+
+yes
+| ?- quadratic_roots(2, 5, 2, Z).['lab4-sol.pro'].           
+compiling /import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro for byte code...
+/import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro:1-9: warning: singleton variables [Q] for quadratic_roots/4
+/import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro compiled, 10 lines read - 2296 bytes written, 6 ms
+
+(1 ms) yes
+| ?- ['lab4-sol.pro'].quadratic_roots(2, 5, 2, Z).
+
+Z = -2.0 ? n
+Action (; for next solution, a for all solutions, RET to stop) ? 
+
+yes
+| ?- 
+
+
+.
+
+length.
+uncaught exception: error(syntax_error('user_input:30 (char:1) expression expected'),read_term/3)
+| ?- length..      quadratic_roots(2, 5, 2, Z).['lab4-sol.pro'].           
+compiling /import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro for byte code...
+/import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro:8:6: syntax error: . or operator expected after expression
+	1 error(s)
+compilation failed
+
+no
+| ?- ['lab4-sol.pro'].
+compiling /import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro for byte code...
+/import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro:8:6: syntax error: . or operator expected after expression
+	1 error(s)
+compilation failed
+
+no
+| ?- ['lab4-sol.pro'].length.          ['lab4-sol.pro'].
+compiling /import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro for byte code...
+/import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro:8:6: syntax error: . or operator expected after expression
+	1 error(s)
+compilation failed
+
+no
+| ?- ['lab4-sol.pro'].
+compiling /import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro for byte code...
+/import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro:8:7: syntax error: . or operator expected after expression
+	1 error(s)
+compilation failed
+
+(1 ms) no
+| ?- ['lab4-sol.pro'].
+compiling /import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro for byte code...
+/import/linux/home1/mtullo1/projects/i471b/submit/lab4/lab4-sol.pro:1-8: warning: singleton variables [Q] for quadratic_roots/4
+/import/l
