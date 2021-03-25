@@ -5,10 +5,9 @@ G is D-E,
 H is sqrt(G),
 P is -(B+H)/F,
 R is (H-B)/F,
-Z = [P, R].
+Z = [P R].
 
-quadratic_helper(B, Z, D):- 
-P is [-(B+D)/F, (D-B)/F],
+quadratic_helper(B, Z, D):- P is [-(B+D)/F, (D-B)/F],
 Z = P.
 
 quadratic_roots2(A, B, C, Z):- D is B*B,
@@ -18,6 +17,9 @@ G is sqrt(F),
 R is quadratic_helper(B, Z, G),
 Z = R.
 
+sum_lengths(Ls, Z).
+
+sum_lengths([A|_], Z):- Z is Z+1,
 
 
 
