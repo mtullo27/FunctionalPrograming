@@ -1,0 +1,195 @@
+Script started on 2021-04-22 15:06:34-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+mtullo1@remote-n23:~/projects/i471b/submit/lab5$ gedit lab5.LOG [K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmka[K[K[Kgedit lab5-sol.hs
+
+(gedit:3504853): Gtk-[1;33mWARNING[0m **: [34m15:07:21.030[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+mtullo1@remote-n23:~/projects/i471b/submit/lab5$ gedit lab5-sol.hs &
+[1] 3505185
+mtullo1@remote-n23:~/projects/i471b/submit/lab5$ 
+(gedit:3505185): Gtk-[1;33mWARNING[0m **: [34m15:08:38.884[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+r[KREPL
+bash: REPL: command not found
+mtullo1@remote-n23:~/projects/i471b/submit/lab5$ repl
+bash: repl: command not found
+mtullo1@remote-n23:~/projects/i471b/submit/lab5$ hug
+bash: hug: command not found
+mtullo1@remote-n23:~/projects/i471b/submit/lab5$ hug
+bash: hug: command not found
+mtullo1@remote-n23:~/projects/i471b/submit/lab5$ ghcb
+bash: ghcb: command not found
+mtullo1@remote-n23:~/projects/i471b/submit/lab5$ hugs
+__   __ __  __  ____   ___      _________________________________________
+||   || ||  || ||  || ||__      Hugs 98: Based on the Haskell 98 standard
+||___|| ||__|| ||__||  __||     Copyright (c) 1994-2005
+||---||         ___||           World Wide Web: http://haskell.org/hugs
+||   ||                         Bugs: http://hackage.haskell.org/trac/hugs
+||   || Version: September 2006 _________________________________________
+
+Haskell 98 mode: Restart with command line option -98 to enable extensions
+
+Type :? for help
+Hugs> "lab5-sol.hs"
+"lab5-sol.hs"
+Hugs> add
+ERROR - Undefined variable "add"
+Hugs> plus
+ERROR - Undefined variable "plus"
+Hugs> conc
+ERROR - Undefined variable "conc"
+Hugs> :l "lab5-sol.hs"
+Main> :t add
+add :: Num a => a -> a -> a
+Main> :t plus
+plus :: Integer -> Integer -> Integer
+Main> :t conc
+conc :: [a] -> [a] -> [a]
+Main> add 2 3
+5
+Main> a[Kconc [1] [2, 3]
+[1,2,3]
+Main> coc [K[Knc [[1]] [[2, 3]]
+[[1],[2,3]]
+Main> conc "hello" "[K"world"
+"helloworld"
+Main> conc ["hello] ["world"]
+ERROR - Improperly terminated string
+Main> ["hello"] ["world"]
+ERROR - Type error in application
+*** Expression     : ["hello"] ["world"]
+*** Term           : ["hello"]
+*** Type           : [[Char]]
+*** Does not match : a -> b
+
+Main> conc (conc ["hello"] ["world"]) ["goodbye"]
+["hello","world","goodbye"]
+Main> conc (conc ["hello"] ["world"]) [42]
+ERROR - Cannot infer instance
+*** Instance   : Num [Char]
+*** Expression : conc (conc ["hello"] ["world"]) [42]
+
+Main> conc (conc ["hello"] ["world"]) [42]"goodbye"][1P ["goodbye"][1P
+ERROR - Type error in application
+*** Expression     : conc conc ["hello"] ["world"] ["goodbye"]
+*** Term           : conc
+*** Type           : [f] -> [f] -> [f]
+*** Does not match : a -> b -> c -> d -> e
+
+Main> conc conc ["hello"] ["world"] ["goodbye"][C[C[C[C[C[C[C[C[C[C[C[5P(conc ["hello"] ["world"]) [42]"goodbye"][C[C[C[C[C[C[24P["hello"] ["world"][C[C[C[C[C[C[4@conc ["hello[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3P"hello" "world"[C[C[C[C[C[C[C[C[C[C[C[1P[[1]] [[2, 3]][4P1] [2, 3][C[C[C[C[C[C[8Padd 2 3:t concplus[1Paddl "lab5-sol.hs"[C[C[C[C[C[Cconc[K:l "lab5-sol.hs"
+Main> :t add10
+ERROR - Undefined variable "add10"
+Main> :t add10l "lab5-sol.hs"
+Main> :l "lab5-sol.hs"[C[C[C[C[C[C[C[8Pt add10
+add10 :: Integer -> Integer
+Main> :t plus5
+plus5 :: Integer -> Integer
+Main> :t h[KconcHello
+concHello :: [Char] -> [Char]
+Main> :[Kadd10 5
+15
+Main> plus 5 [K[K[K5 16
+21
+Main> conc [KHello "world"
+"helloworld"
+Main> let tuple = ("je[K[Khello", 42) uib [K[K[K[Kin fst tuple
+"hello"
+Main> let u[Ktuple = (;'[K[K"hello_[K)[K", 42) in ss[Knd tuple
+42
+Main> let tuple = ("hello", 42) in snd tuplefst[C[C[C[C[C[C[C[C[C[C[C[C[21PconcHello "world"[C[C[C[C[C[C[9Pplus5 16[C[C[C[C[C[C[1Padd10 5plus5 16[C[C[C[C[C[CconcHello "world"[C[C[C[C[C[C[9Pplus5 16[C[C[C[C[C[C[1Padd10 5:t concHello[4Pplus5add10l "lab5-sol.hs"[C[C[C[C[C[C[C[8Pt add10l "lab5-sol.hs"
+Main> :l "lab5-sol.hs"[C[C[C[C[C[Clet tuple = ("hello", 42) in snd tuplefst[C[C[C[C[C[C[C[C[C[C[C[C[21PconcHello "world"[C[C[C[C[C[C[9Pplus5 16[C[C[C[C[C[C[1Padd10 5:t concHello[4Pplus5add10l "lab5-sol.hs"[C[C[C[C[C[C[C[8Pt add10plus5concHello[C[C[C[C[C[C[5Padd10 5plus5 16[C[C[C[C[C[CconcHello "world"[C[C[C[C[C[Clet tuple = ("hello", 42) in fst tuplesnd[C[C[C[C[C[C[C[C[C[C[C[C[22P:l "lab5-sol.hs"[C[C[C[C[C[Clet tuple = ("hello", 42) in snd tuple[1P[1P[1P tuples tuplee tuplec tupleo tuplen tupled tuple
+42
+Main> let tuple = ("hello", 42) in second tuple[C[C[C[C[C[C[25P:l "lab5-sol.hs"[C[C[C[C[C[Clet tuple = ("hello", 42) in second tuple[1P tuple[1P tuple[1P tuple[1P tuple[1P tuple[1P tuplef tuplei tupler tuples tuplet tuple
+"hello"
+Main> let tuple = ("hello", 42) in first tuple[1@second[C[C[C[C[C[C[C[C[C[C[C[C[25P:l "lab5-sol.hs"
+Main> :l "lab5-sol.hs"[C[C[C[C[C[Clet tuple = ("hello", 42) in first tuple[C[C[C[C[C[C[24P:l "lab5-sol.hs"[C[C[C[C[C[C[Kfirst (12, "hello", [])
+ERROR - Type error in application
+*** Expression     : first (12,"hello",[])
+*** Term           : (12,"hello",[])
+*** Type           : (c,[Char],[d])
+*** Does not match : (a,b)
+
+Main> first (12, "hello", [])[C[1P[1P[1P[1P[1@s[1@t[1@3
+ERROR - Undefined variable "fst3"
+Main> fst3 (12, "hello", [])[C[C[C[C[C[C[C[1@irst[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7P:l "lab5-sol.hs"
+Main> :l "lab5-sol.hs"[C[C[C[C[C[Cfst3 (12, "hello", [])
+12
+Main> fst3 (12, "hello", [])[1P[1P[1P[1@s[1@n[1@d
+"hello"
+Main> snd3 (12, "hello", [])[C[C[C[C[C[Cfst[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csnd[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfst[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6P:l "lab5-sol.hs"
+ERROR "lab5-sol.hs":21 - Haskell 98 does not support pattern type annotations
+Hugs> :l "lab5-sol.hs"
+ERROR "lab5-sol.hs":21 - Haskell 98 does not support pattern type annotations
+Hugs> ^Z
+[2]+  Stopped                 hugs
+mtullo1@remote-n23:~/projects/i471b/submit/lab5$ hugsghcbhugs
+__   __ __  __  ____   ___      _________________________________________
+||   || ||  || ||  || ||__      Hugs 98: Based on the Haskell 98 standard
+||___|| ||__|| ||__||  __||     Copyright (c) 1994-2005
+||---||         ___||           World Wide Web: http://haskell.org/hugs
+||   ||                         Bugs: http://hackage.haskell.org/trac/hugs
+||   || Version: September 2006 _________________________________________
+
+Haskell 98 mode: Restart with command line option -98 to enable extensions
+
+Type :? for help
+Hugs> :l "lab5-sp[Kol.hs"
+Main> sumFirst[K[K[K[K[KFirsty[K2 [1, 2, 3]
+3
+Main> fnFirst2 [3, 4] (+) (*)
+ERROR - Undefined variable "fnFirst2"
+Main> fnFirst2 [3, 4] (+) (*)[C[C[C[C[C[C[4PsumFirst2 [1, 2, 3][C[C[C[C[C[C[3P:l "lab5-sol.hs"
+Main> :l "lab5-sol.hs"[C[C[C[C[C[CfnFirst2 [3, 4] (+) (*)
+7
+Main> fnFirst2 [3, 4] (+) (*)[C[C[C[C[C[C[7P:l "lab5-sol.hs"[C[C[C[C[C[CfnFirst2 [3, 4] (+) (*)[C[C[C[C[C[C[KfnFirst2 [3, 4, 5] (+) (*
+ERROR - Syntax error in expression (unexpected end of input)
+Main> fnFirst2 [3, 4, 5] (+) (*)
+12
+Main> fnFirst2 [3, 4, 5] (+) (*)[K[2P] (+) (*)[C[C[C[C[C[C[7P:l "lab5-sol.hs"
+Main> cartesianProduct [1..4] [2..4]
+[(1,2),(1,3),(1,4),(2,2),(2,3),(2,4),(3,2),(3,3),(3,4),(4,2),(4,3),(4,4)]
+Main> cartesianProduct [1..4] [2..4][C[C[C[C[C[C[14P:l "lab5-sol.hs"
+Main> cartesianProductIf [1..4] [2..4] (>)
+[(3,2),(4,2),(4,3)]
+Main> paircartesianProductIf [1..4] [2..4] (>)[C[C[C[C[C[C[20P:l "lab5-sol.hs"
+Main> pairs [K
+[(1,6),(2,17),(3,34),(4,57),(5,86),(6,121),(7,162),(8,209),(9,262),(10,321)]
+Main> pairs:l "lab5-sol.hs"
+ERROR "lab5-sol.hs":33 - Unresolved top-level overloading
+*** Binding             : pairs2
+*** Outstanding context : (Num b, Enum b, Integral (b,b))
+
+Hugs> :l "lab5-sol.hs"
+Main> pairs2
+[(1,6),(4,57),(7,162),(10,321)]
+Main> pairs2:l "lab5-sol.hs"
+Main> oddEvenPairs 5
+[(1,2),(1,4),(3,2),(3,4),(5,2),(5,4)]
+Main> oddEvenPairs 7
+[(1,2),(1,4),(1,6),(3,2),(3,4),(3,6),(5,2),(5,4),(5,6),(7,2),(7,4),(7,6)]
+Main> mapPair
+ERROR - Undefined variable "mapPair"
+Main> mapPairoddEvenPairs 75[C[C[C[C[C[C:l "lab5-sol.hs"[C[C[C[C[C[C[10Ppairs2:l "lab5-sol.hs"
+Main> :l "lab5-sol.hs"[C[C[C[C[C[C[9PmapPair
+[(1,6),(2,17),(3,34),(4,57),(5,86),(6,121),(7,162),(8,209),(9,262),(10,321)]
+Main> mapPair:l "lab5-sol.hs"
+ERROR "lab5-sol.hs":39 - Type error in application
+*** Expression     : filter (\(x,y) -> y `rem` 3 == 0) map (\x -> (x,3 * x ^ 2 + 2 * x + 1)) (enumFromTo 1 10)
+*** Term           : filter
+*** Type           : (f -> Bool) -> [f] -> [f]
+*** Does not match : a -> b -> c -> d -> e
+
+Hugs> :l "lab5-sol.hs"[C[C[C[C[C[C[9PmapPair:l "lab5-sol.hs"
+Main> :l "lab5-sol.hs"[C[C[C[C[C[C[9PmapPair
+[(1,6),(2,17),(3,34),(4,57),(5,86),(6,121),(7,162),(8,209),(9,262),(10,321)]
+Main> ^Z
+[3]+  Stopped                 hugs
+mtullo1@remote-n23:~/projects/i471b/submit/lab5$ exit
+There are stopped jobs.
+mtullo1@remote-n23:~/projects/i471b/submit/lab5$ exit
+
+Unexpected signal
+[Leaving Hugs]
+
+Unexpected signal
+
+Script done on 2021-04-22 15:33:58-04:00 [COMMAND_EXIT_CODE="148"]
