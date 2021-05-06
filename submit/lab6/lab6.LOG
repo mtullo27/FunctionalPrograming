@@ -1,0 +1,401 @@
+Script started on 2021-05-06 13:06:27-04:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="80" LINES="24"]
+mtullo1@remote-n23:~/i471b/submit/lab6$ ls
+lab6.erl  lab6.LOG
+mtullo1@remote-n23:~/i471b/submit/lab6$ gedit lab6.erl &
+[1] 3271925
+mtullo1@remote-n23:~/i471b/submit/lab6$ erl
+Erlang/OTP 21 [erts-10.2.4] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:1]
+
+Eshell V10.2.4  (abort with ^G)
+1> c(lab6)[C[C[C[C[C[C.
+lab6.erl:6: Warning: export_all flag enabled - all functions will be exported
+{ok,lab6}
+2> x = 123
+2> 123 = X
+2> X = 123
+2> 123 = Y
+2> .
+* 2: syntax error before: 123
+2> X = 123/.  .
+123
+3> 123 = X.
+123
+4> 123 = Y.
+* 1: variable 'Y' is unbound
+5> Shapes = [ { square, 2 }, { circle, 1 }, { square, 1 } ].
+[{square,2},{circle,1},{square,1}]
+6> [{_, Side1}, _, {_, Side3}|_] = Shapes.
+[{square,2},{circle,1},{square,1}]
+7> Sides = [ Side1, Side3 ].
+[2,1]
+8> Sides.
+[2,1]
+9> Grades = [ {bill, 82}, {sue, 95}, { john, 85} ].
+[{bill,82},{sue,95},{john,85}]
+10> [{ _, _, Grade3][C[C[C[C[C[C[C[C[C[C[C[C[C[C = gr    Grades
+10> Grade3
+10> .
+* 2: syntax error before: Grade3
+10>     10> .     10> Grade3          10> [_, _, Grade3] = Grades.
+[{bill,82},{sue,95},{john,85}]
+11>     11> [_, _, Grade3] = Grades.                            11> .     11> Grade3.
+{john,85}
+12> [{_, G Grade     Point1}[C[C[C[C[C[C[C[C[C[C[C,{_,Point2}[C[C[C[C[C[C[C[C[C[C,{po   _ {_,Poinr t3}[C[C[C[C[C[C[C[C[C[C} ][C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C=Grades.
+[{bill,82},{sue,95},{john,85}]
+13> Points   = [Point1, Point2, Point2 3][C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.
+"R_U"
+14>     14> Points = [Point1, Point2, Point3].                                      14> point     Point1.
+82
+15> Points = [Point1[ ][C[C[C[C[C[C[C[C
+15> .
+** exception error: no match of right hand side value "R"
+16>     16> .     16> Points = [Point1].
+** exception error: no match of right hand side value "R"
+17>     17> Points = [Point1].[C         integer_to_list(Point1)[C[C[C[C[C[C[C[C.
+** exception error: no match of right hand side value "82"
+18>     18> Points = integer_to_list(Point1).                                     18> Points = [Point1].                      18> .     18> Points = [Point1]                     18> Point1.           18> Points = [Point1, Point2, Point3].                                      18> [{_, Point1},{_,Point2},{_,Point3}]=Grades.|]=Grades._]=Grades.[C[C[C[C[C[C[C[C[C
+[{bill,82},{sue,95},{john,85}]
+19>     19> [{_, Point1},{_,Point2},{_,Point3}|_]=Grades.                                                 19> Points = integer_to_list(Point1).                                     19> Points = [Point1].                      19> .     19> Points = [Point1]                     19> Point1.           19> Points = [Point1, Point2, Point3].
+"R_U"
+20>     20> Points = [Point1, Point2, Point3].                                      20> [{_, Point1},{_,Point2},{_,Point3}|_]=Grades.                                                 20> Points = integer_to_list(Point1).[integer_to_list(Point1).[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C,. .i.n.t.e.g.e.r._.t.o._.l.i.s.t.(.P.o.i.n.t.2.).[C[C[C[C[C[C[C[C,. .i.n.t.e.g.e.r._.t.o._.l.i.s.t. [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C(.P.o.i.n.t.3.).[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[.. ].[A[C[C[C[C[C
+[C
+** exception error: no match of right hand side value ["82","95","85"]
+21>     21> Points = [integer_to_list(Point1), integer_to_list(Point2), integer_to_list(Point3)]. [A                                                                                        [A21> Points = [Point1, Point2, Point3].                                      21> Points = [integer_to_list(Point1), integer_to_list(Point2), integer_to_list(Point3)].[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[integer_to_list(Point1), integer_to_list(Point2), integer_to_list(Point3)]. [A[C[C[C[integer_to_list(Point1), integer_to_list(Point2), integer_to_list(Point3)]. [A[C[C[C[integer_to_list(Point1), integer_to_list(Point2), integer_to_list(Point3)]. [A[C[C[C[integer_to_list(Point1), integer_to_list(Point2), integer_to_list(Point3)]. [A[C[C[C[integer_to_list(Point1), integer_to_list(Point2), integer_to_list(Point3)]. [A[C[C[C[integer_to_list(Point1), integer_to_list(Point2), integer_to_list(Point3)]. [A[C[C[C[integer_to_list(Point1), integer_to_list(Point2), integer_to_list(Point3)]. [A[C[C[C[integer_to_list(Point1), integer_to_list(Point2), integer_to_list(Point3)]. [A[C[C[C[integer_to_list(Point1), integer_to_list(Point2), integer_to_list(Point3)].  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C]. [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C                                                                               21> Points = [Point1, Point2, Point3].                                      21> [integer_to_list(Point1), integer_to_list(Point2), integer_to_list(Point3)]. [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C  = Points
+21> Points
+21> .
+* 2: syntax error before: Points
+21>     21> .     21> Points.
+"R_U"
+22>     22> Points.           22> .     22> Points          22> [integer_to_list(Point1), integer_to_list(Point2), integer_to_list(Point3)] = Points[A                                                                                        [A22> [integer_to_list(Point1), integer_to_list(Point2), integer_to_list(Point3)]. [A                                                                                 [A22> Points = [Point1, Point2, Point3].                                      22> [{_, Point1},{_,Point2},{_,Point3}|_]=Grades.                                                 22> Points = [Point1, Point2, Point3].                                      22> [integer_to_list(Point1), integer_to_list(Point2), integer_to_list(Point3)]. [A                                                                                 [A22> Points = [Point1, Point2, Point3].                                      22> [integer_to_list(Point1), integer_to_list(Point2), integer_to_list(Point3)]. [A                                                                                 [A22> Points = [Point1, Point2, Point3].                                      22> [{_, Point1},{_,Point2},{_,Point3}|_]=Grades.                                                 22> Points = integer_to_list(Point1).                                     22> Points = [Point1].                      22> Points = integer_to_list(Point1).
+** exception error: no match of right hand side value "82"
+23>     23> Points = integer_to_list(Point1).                                     23> Points.           23> .     23> Points          23> [integer_to_list(Point1), integer_to_list(Point2), integer_to_list(Point3)] = Points[A                                                                                        [A23> [integer_to_list(Point1), integer_to_list(Point2), integer_to_list(Point3)]. [A                                                                                 [A23> Points = [Point1, Point2, Point3].                                      23> [integer_to_list(Point1), integer_to_list(Point2), integer_to_list(Point3)]. [A                                                                                 [A23> [integer_to_list(Point1), integer_to_list(Point2), integer_to_list(Point3)] = Points[A                                                                                        [A23> Points          23> .     23> Points.           23> Points = integer_to_list(Point1).                                     23>     23> Points = integer_to_list(Point1).                                     23>     23> Points = integer_to_list(Point1).                                     23> Points.           23> .     23> Points          23> [integer_to_list(Point1), integer_to_list(Point2), integer_to_list(Point3)] = Points [A                                                                                       [A23> Points          23> .     23> Points.           23> Points = integer_to_list(Point1).                                     23>     23> Points = integer_to_list(Point1).                                     23> Points.           23> .     23> Points          23> [integer_to_list(Point1), integer_to_list(Point2), integer_to_list(Point3)] = Points[A                                                                                        [A23> [integer_to_list(Point1), integer_to_list(Point2), integer_to_list(Point3)]. [A                                                                                 [A23> Points = [Point1, Point2, Point3].                                      23> [{_, Point1},{_,Point2},{_,Point3}|_]=Grades.                                                 23> Points = integer_to_list(Point1).                                     23> Points = [Point1].                      23> .     23> Points = [Point1]                     23> Point1.           23> Points = [Point1, Point2, Point3].                                      23> [{_, Point1},{_,Point2},{_,Point3}]=Grades.                                               23> Grade3.           23> [_, _, Grade3] = Grades.                            23> .     23> Grade3          23> .     23> [_, _, Grade3] = Grades.                            23> Grade3.           23> [{_, Point1},{_,Point2},{_,Point3}]=Grades.                                               23> Points = [Point1, Point2, Point3].                                      23> Point1.           23> Points = [Point1]                     23> .     23> Points = [Point1].                      23> Points = integer_to_list(Point1).                                     23> [{_, Point1},{_,Point2},{_,Point3}|_]=Grades.                                                 23> Points = [Point1, Point2, Point3].                                      23> [integer_to_list(Point1), integer_to_list(Point2), integer_to_list(Point3)]. [A                                                                                 [A23> [integer_to_list(Point1), integer_to_list(Point2), integer_to_list(Point3)] = Points[A                                                                                        [A23> Points          23> .     23> Points.           23> Points = integer_to_list(Point1).                                     23> Ppo  oints
+23> .
+"R_U"
+24>     24> . Points = list_to_I integer(Points)[C[C[C[C[C[C[C[C.
+** exception error: bad argument
+     in function  list_to_integer/1
+        called as list_to_integer("R_U")
+25>     25> Points = list_to_integer(Points).[C = list_to_integer(Points). [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+** exception error: bad argument
+     in function  list_to_integer/1
+        called as list_to_integer("R_U")
+26>     26>     26> Point = list_to_integer(Points).                                    26> Points = list_to_integer(Points).                                     26> .     26> Points          26> Points = integer_to_list(Point1).                                     26> Points.           26> .     26> Points          26> [integer_to_list(Point1), integer_to_list(Point2), integer_to_list(Point3)] = Points[A                                                                                        [A26> [integer_to_list(Point1), integer_to_list(Point2), integer_to_list(Point3)]. [A                                                                                 [A26> Points = [Point1, Point2, Point3].
+"R_U"
+27> 
+(gedit:3271925): Gtk-[1;33mWARNING[0m **: [34m13:39:38.324[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+    27> Points = [Point1, Point2, Point3].                                      27> Point = list_to_integer(Points).                                    27> Points = list_to_integer(Points).                                     27> .     27> Points          27> Points = integer_to_list(Point1).                                     27> Points.           27> .     27> Points          27> [integer_to_list(Point1), integer_to_list(Point2), integer_to_list(Point3)] = Points[A                                                                                        [A27> [integer_to_list(Point1), integer_to_list(Point2), integer_to_list(Point3)]. [A                                                                                 [A27> Points = [Point1, Point2, Point3].                                      27> [{_, Point1},{_,Point2},{_,Point3}|_]=Grades.                                                 27> Points = integer_to_list(Point1).                                     27> Points = [Point1].                      27> .     27> Points = [Point1]                     27> Point1.           27> Points = [Point1, Point2, Point3].                                      27> [{_, Point1},{_,Point2},{_,Point3}]=Grades.                                               27> Grade3.           27> [_, _, Grade3] = Grades.                            27> .     27> Grade3          27> [_, _, Grade3] = Grades                           27> Grades = [ {bill, 82}, {sue, 95}, { john, 85} ].                                                    27> Sides.          27> Sides = [ Side1, Side3 ].                             27> [{_, Side1}, _, {_, Side3}|_] = Shapes.                                           27> Shapes = [ { square, 2 }, { circle, 1 }, { square, 1 } ].                                                             27> 123 = Y.            27> 123 = X.            27> X = 123.            27> .     27> 123 = Y           27> X = 123           27> 123 = X           27> x = 123           27> c(lab6).
+lab6.erl:6: Warning: export_all flag enabled - all functions will be exported
+{ok,lab6}
+28> lab6:~~[C[C[C[C[C[C~ ~ ~ ~ ~ ~  lab6:perimeter({circle, 1}).
+** exception error: undefined function lab6:perimeter/1
+29>     29> lab6:perimeter({circle, 1}).                                29> c(lab6).
+lab6.erl:6: Warning: export_all flag enabled - all functions will be exported
+{ok,lab6}
+30>     30> c(lab6).            30> lab6:perimeter({circle, 1}).
+6.28318
+31> lab6:perimeter({square, 2}).
+8
+32> lab6:perimeter({rectangle, 2, 3}).
+** exception error: no function clause matching 
+                    lab6:perimeter({rectangle,2,3}) (lab6.erl, line 22)
+33>     33> lab6:perimeter({rectangle, 2, 3}).                                      33> lab6:perimeter({square, 2}).                                33> lab6:perimeter({circle, 1}).                                33> lab6:perimeter({square, 2}).                                33> lab6:perimeter({rectangle, 2, 3}).                                      33>     33> lab6:perimeter({rectangle, 2, 3}).                                      33> lab6:perimeter({square, 2}).                                33> lab6:perimeter({circle, 1}).                                33> c(lab6).            33> lab6:perimeter({circle, 1}).                                33> c(lab6).
+lab6.erl:6: Warning: export_all flag enabled - all functions will be exported
+{ok,lab6}
+34> g guard_perimeter({swuare,      quare, 5}[C[C[C[C[C[C[C[C[C[C[C)[C[C[C[C[C[C[C[C[C[C[C[C[C.
+** exception error: undefined shell command guard_perimeter/1
+35>     35> guard_perimeter({square, 5}).lguard_perimeter({square, 5}).aguard_perimeter({square, 5}).bguard_perimeter({square, 5}).6guard_perimeter({square, 5}).:guard_perimeter({square, 5}).[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+20
+36>     36> lab6:guard_perimeter({square, 5})., 5}). , 5}). , 5}). , 5}). , 5}). , 5}). c, 5}).i, 5}).r, 5}).c, 5}).l, 5}).e, 5}).[C[C[C[C[C[C
+31.4159
+37>     37> lab6:guard_perimeter({circle, 5}).                                      37> lab6:guard_perimeter({square, 5}).                                      37> guard_perimeter({square, 5}).                                 37> c(lab6).
+lab6.erl:6: Warning: export_all flag enabled - all functions will be exported
+{ok,lab6}
+38>     38> c(lab6).            38> lab6:guard_perimeter({circle, 5}).
+** exception error: undefined function lab6:guard_perimeter/1
+39>     39> lab6:guard_perimeter({circle, 5}).                                      39> c(lab6).
+lab6.erl:6: Warning: export_all flag enabled - all functions will be exported
+{ok,lab6}
+40>     40> c(lab6).            40> lab6:guard_perimeter({circle, 5}).[C[C_perimeter({circle, 5}). _perimeter({circle, 5}). _perimeter({circle, 5}). _perimeter({circle, 5}). _perimeter({circle, 5}). i_perimeter({circle, 5}).f_perimeter({circle, 5}).[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+31.4159
+41>     41> lab6:if_perimeter({circle, 5}).[C, 5}). , 5}). , 5}). , 5}). , 5}). , 5}). s, 5}).q, 5}).u, 5}).a, 5}).r, 5}).e, 5}).[C[C[C[C[C[C
+20
+42>     42> lab6:if_perimeter({square, 5}).                                   42> lab6:if_perimeter({circle, 5}).                                   42> c(lab6).
+lab6.erl:41: syntax error before: 
+lab6.erl:6: Warning: export_all flag enabled - all functions will be exported
+error
+43>     43> c(lab6).            43> lab6:if_perimeter({square, 5}).[C_perimeter({square, 5}). _perimeter({square, 5}). _perimeter({square, 5}). :_perimeter({square, 5}).c_perimeter({square, 5}).a_perimeter({square, 5}).s_perimeter({square, 5}).e_perimeter({square, 5}).[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+** exception error: undefined function lab6:case_perimeter/1
+44>     44> lab6:case_perimeter({square, 5}).                                     44> c(lab6).            44> lab6:case_perimeter({square, 5}).                                     44>     44> lab6:case_perimeter({square, 5}).                                     44> c(lab6).
+lab6.erl:41: syntax error before: 
+lab6.erl:6: Warning: export_all flag enabled - all functions will be exported
+error
+45>     45> c(lab6).
+lab6.erl:6: Warning: export_all flag enabled - all functions will be exported
+{ok,lab6}
+46>     46> c(lab6).            46> lab6:case_perimeter({square, 5}).
+20
+47>     47> lab6:case_perimeter({square, 5}).                                     47> c(lab6).            47> lab6:case_perimeter({square, 5})., 5}). , 5}). , 5}). , 5}). , 5}). i, 5}).r, 5}).c, 5}).l, 5}).e, 5}).[C[C[C[C[C[C
+** exception error: no case clause matching {sircle,5}
+     in function  lab6:case_perimeter/1 (lab6.erl, line 38)
+48>     48> lab6:case_perimeter({sircle, 5}).ircle, 5}). circle, 5}).[C[C[C[C[C[C[C[C[C[C[C
+31.4159
+49>     49> lab6:case_perimeter({circle, 5}).                                     49> lab6:case_perimeter({sircle, 5}).                                     49> lab6:case_perimeter({square, 5}).                                     49> c(lab6).            49> lab6:case_perimeter({square, 5}).                                     49> c(lab6).
+lab6.erl:43: syntax error before: 'when'
+lab6.erl:6: Warning: export_all flag enabled - all functions will be exported
+error
+50>     50> c(lab6).
+lab6.erl:43: syntax error before: 'when'
+lab6.erl:6: Warning: export_all flag enabled - all functions will be exported
+error
+51>     51> c(lab6).
+lab6.erl:43: syntax error before: 'when'
+lab6.erl:6: Warning: export_all flag enabled - all functions will be exported
+error
+52>     52> c(lab6).
+lab6.erl:43: syntax error before: 'when'
+lab6.erl:6: Warning: export_all flag enabled - all functions will be exported
+error
+53>     53> c(lab6).
+lab6.erl:6: Warning: export_all flag enabled - all functions will be exported
+lab6.erl:51: Warning: variable 'Points' is unused
+{ok,lab6}
+54> le  lab6:letter_grade(91).
+'A'
+55>     55> lab6:letter_grade(91).1). [C[C[C
+'F'
+56>     56> lab6:letter_grade(1).). 2).0).[C[C
+'F'
+57>     57> lab6:letter_grade(20).    87)[C[C[C[C.
+'B'
+58> 
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+a
+mtullo1@remote-n23:~/i471b/submit/lab6$ erlgedit lab6.erl &erl[K
+Erlang/OTP 21 [erts-10.2.4] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:1]
+
+Eshell V10.2.4  (abort with ^G)
+1> c(lasa  b6( )( .
+lab6.erl:6: Warning: export_all flag enabled - all functions will be exported
+lab6.erl:51: Warning: variable 'Points' is unused
+{ok,lab6}
+2>    2> c(lab6).           2>    2> c(lab6).
+lab6.erl:6: Warning: export_all flag enabled - all functions will be exported
+lab6.erl:51: Warning: variable 'Points' is unused
+{ok,lab6}
+3> igf  f_letter_grades (90)[C[C[C[C.
+** exception error: undefined shell command if_letter_grade/1
+4>    4> if_letter_grade(90).                       4> c(lab6).
+lab6.erl:6: Warning: export_all flag enabled - all functions will be exported
+lab6.erl:51: Warning: variable 'Points' is unused
+{ok,lab6}
+5>    5> c(lab6).           5>    5> c(lab6).           5> if_letter_grade(90).                       5> c(lab6).           5> if_letter_grade(90).
+** exception error: undefined shell command if_letter_grade/1
+6>    6> if_letter_grade(90).lif_letter_grade(90).aif_letter_grade(90).bif_letter_grade(90).6if_letter_grade(90).:if_letter_grade(90).[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+'B'
+7> 
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+a
+mtullo1@remote-n23:~/i471b/submit/lab6$ erl
+Erlang/OTP 21 [erts-10.2.4] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:1]
+
+Eshell V10.2.4  (abort with ^G)
+1> Shapes = lab6:shapes_data().
+[{square,2},
+ {circle,1},
+ {square,1},
+ {square,3},
+ {circle,2},
+ {square,4}]
+2> lab6:shape_types(Shapes).
+** exception error: undefined function lab6:shape_types/1
+3> c(lab6)[C[C[C[C[C[C.
+lab6.erl:6: Warning: export_all flag enabled - all functions will be exported
+lab6.erl:51: Warning: variable 'Points' is unused
+{ok,lab6}
+4>    4> c(lab6).           4> lab6:shape_types(Shapes).
+[square,circle,square,square,circle,square]
+5>    5> lab6:shape_types(Shapes).                            5> c(lab6).
+lab6.erl:6: Warning: export_all flag enabled - all functions will be exported
+lab6.erl:51: Warning: variable 'Points' is unused
+{ok,lab6}
+6> p lab6:perimeters(Shapes)[C[C[C[C[C[C[C[C.
+[8,6.28318,4,12,12.56636,16]
+7>    7> lab6:perimeters(Shapes).                           7> c(lab6).
+lab6.erl:6: Warning: export_all flag enabled - all functions will be exported
+lab6.erl:51: Warning: variable 'Points' is unused
+{ok,lab6}
+8>    8> c(lab6).           8> lab6:perimeters(Shapes).(Shapes). (Shapes). (Shapes). (Shapes). (Shapes). (Shapes). (Shapes). (Shapes). (Shapes). (Shapes). s(Shapes).u(Shapes).m(Shapes)._(Shapes).p(Shapes).e(Shapes).r(Shapes).i(Shapes).m(Shapes).e(Shapes).t(Shapes).e(Shapes).r(Shapes).s(Shapes).[C[C[C[C[C[C[C[C[C
+58.849540000000005
+9>    9> lab6:sum_perimeters(Shapes)._perimeters(Shapes). _perimeters(Shapes). _perimeters(Shapes). a_perimeters(Shapes).v_perimeters(Shapes).e_perimeters(Shapes).r_perimeters(Shapes).a_perimeters(Shapes).g_perimeters(Shapes).e_perimeters(Shapes).[C[C[C[C[C[C[C[C[C[C[C[C(Shapes). [C[C[C[C[C[C[C[C[C
+9.808256666666667
+10> Grades = lab6:grades_data().
+[{bill,82.0},{sue,95},{john,85},{joe,73},{mary,65},{tom,55}]
+11>     11> Grades = lab6:grades_data().                                11> lab6:average_perimeter(Shapes).
+9.808256666666667
+12>     12> lab6:average_perimeter(Shapes).                                   12> Grades = lab6:grades_data().                                12> lab6:average_perimeter(Shapes).                                   12> lab6:sum_perimeters(Shapes).                                12> c(lab6).
+lab6.erl:6: Warning: export_all flag enabled - all functions will be exported
+lab6.erl:51: Warning: variable 'Points' is unused
+{ok,lab6}
+13>     13> c(lab6).            13> lab6:average_perimeter(Shapes).[C[C[C[C[C[C[C                          letter_grades(Grades)[C[C[C[C[C[C[C[C.
+['A','A','A','A','A','A']
+14> \     14> lab6:letter_grades(Grades).                               14> c(lab6).
+lab6.erl:6: Warning: export_all flag enabled - all functions will be exported
+lab6.erl:51: Warning: variable 'Points' is unused
+{ok,lab6}
+15>     15> c(lab6).            15> lab6:letter_grades(Grades).
+** exception error: no true branch found when evaluating an if expression
+     in function  lab6:if_letter_grade/1 (lab6.erl, line 55)
+     in call from lab6:'-letter_grades/1-fun-1-'/1 (lab6.erl, line 77)
+     in call from lists:map/2 (lists.erl, line 1239)
+     in call from lists:map/2 (lists.erl, line 1239)
+16>     16> lab6:letter_grades(Grades).
+** exception error: no true branch found when evaluating an if expression
+     in function  lab6:if_letter_grade/1 (lab6.erl, line 55)
+     in call from lab6:'-letter_grades/1-fun-1-'/1 (lab6.erl, line 77)
+     in call from lists:map/2 (lists.erl, line 1239)
+     in call from lists:map/2 (lists.erl, line 1239)
+17>     17> lab6:letter_grades(Grades).
+** exception error: no true branch found when evaluating an if expression
+     in function  lab6:if_letter_grade/1 (lab6.erl, line 55)
+     in call from lab6:'-letter_grades/1-fun-1-'/1 (lab6.erl, line 77)
+     in call from lists:map/2 (lists.erl, line 1239)
+     in call from lists:map/2 (lists.erl, line 1239)
+18>     18> lab6:letter_grades(Grades).                               18> c(lab6).
+lab6.erl:6: Warning: export_all flag enabled - all functions will be exported
+lab6.erl:51: Warning: variable 'Points' is unused
+lab6.erl:77: Warning: variable 'Grade' is unused
+{ok,lab6}
+19>     19> c(lab6).            19> lab6:letter_grades(Grades).
+[bill,sue,john,joe,mary,tom]
+20>     20> lab6:letter_grades(Grades).                               20> c(lab6).            20> lab6:letter_grades(Grades).[C                               20> c(lab6).
+lab6.erl:6: Warning: export_all flag enabled - all functions will be exported
+lab6.erl:51: Warning: variable 'Points' is unused
+lab6.erl:77: Warning: variable 'Name' is unused
+{ok,lab6}
+21>     21> c(lab6).            21> lab6:letter_grades(Grades).
+[82.0,95,85,73,65,55]
+22>     22> lab6:letter_grades(Grades).                               22> c(lab6).
+lab6.erl:77: syntax error before: '('
+lab6.erl:6: Warning: export_all flag enabled - all functions will be exported
+lab6.erl:51: Warning: variable 'Points' is unused
+error
+23>     23> c(lab6).
+lab6.erl:77: syntax error before: '('
+lab6.erl:6: Warning: export_all flag enabled - all functions will be exported
+lab6.erl:51: Warning: variable 'Points' is unused
+error
+24>     24> c(lab6).
+lab6.erl:6: Warning: export_all flag enabled - all functions will be exported
+lab6.erl:51: Warning: variable 'Points' is unused
+lab6.erl:77: Warning: variable 'Name' is unused
+{ok,lab6}
+25>     25> c(lab6).
+lab6.erl:6: Warning: export_all flag enabled - all functions will be exported
+lab6.erl:51: Warning: variable 'Points' is unused
+lab6.erl:77: Warning: variable 'Name' is unused
+{ok,lab6}
+26>     26> c(lab6).            26> lab6:letter_grades(Grades).
+['B','A','B','C','D','F']
+27>     27> lab6:letter_grades(Grades).                               27> c(lab6).
+lab6.erl:6: Warning: export_all flag enabled - all functions will be exported
+lab6.erl:51: Warning: variable 'Points' is unused
+{ok,lab6}
+28>     28> c(lab6).            28> lab6:letter_grades(Grades).
+[{bill,'B'},
+ {sue,'A'},
+ {john,'B'},
+ {joe,'C'},
+ {mary,'D'},
+ {tom,'F'}]
+29> 
+29>     29> lab6:letter_grades(Grades).                               29> c(lab6).
+lab6.erl:6: Warning: export_all flag enabled - all functions will be exported
+lab6.erl:51: Warning: variable 'Points' is unused
+{ok,lab6}
+30>     30> c(lab6).            30> lab6:letter_grades(Grades).[C(Grades). (Grades). (Grades). (Grades). (Grades). (Grades). (Grades). (Grades). (Grades). (Grades). (Grades). (Grades). (Grades). g(Grades).r(Grades).a(Grades).d(Grades).e(Grades)._(Grades).p(Grades).o(Grades).i(Grades).n(Grades).t(Grades).s(Grades).[C[C[C[C[C[C[C[C[C
+[82.0,95,85,73,65,55]
+31> 
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+a
+mtullo1@remote-n23:~/i471b/submit/lab6$ erl
+Erlang/OTP 21 [erts-10.2.4] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:1]
+
+Eshell V10.2.4  (abort with ^G)
+1> c(lav b6)[C[C[C[C[C[C,
+1> , .
+* 2: syntax error before: '.'
+1>    1> .    1> c(lab6), .
+lab6.erl:6: Warning: export_all flag enabled - all functions will be exported
+lab6.erl:51: Warning: variable 'Points' is unused
+{ok,lab6}
+2> Shapes = lab6:shapes_data().
+[{square,2},
+ {circle,1},
+ {square,1},
+ {square,3},
+ {circle,2},
+ {square,4}]
+3> PID1 = lab6:start_data_server(Shapes).
+** exception error: undefined function lab6:start_data_server/1
+4>    4> PID1 = lab6:start_data_server(Shapes).                                         4> Shapes = lab6:shapes_data().                               4> c(lab6).
+lab6.erl:6: Warning: export_all flag enabled - all functions will be exported
+lab6.erl:51: Warning: variable 'Points' is unused
+{ok,lab6}
+5>    5> c(lab6).           5> PID1 = lab6:start_data_server(Shapes).
+<0.93.0>
+6> lab6:data_client(PID1, fun lab6:average_perimeter/1).
+9.808256666666667
+7> lab6:data_client(PID1, fun lab6:shape_types/1).
+[square,circle,square,square,circle,square]
+8> lab6:data_client(PID1, fun (X) -> X end).
+[{square,2},
+ {circle,1},
+ {square,1},
+ {square,3},
+ {circle,2},
+ {square,4}]
+9> F = fun ({T, S}) -> {T, S*3} end.
+#Fun<erl_eval.6.128620087>
+10> lab6:data_client(PID1, fun (Shapes) -> lists:map(F, Shapes) end).
+[{square,6},
+ {circle,3},
+ {square,3},
+ {square,9},
+ {circle,6},
+ {square,12}]
+11> 
+11> Grades -    =  = lav b6:grades_data()[C[C.
+[{bill,82.0},{sue,95},{john,85},{joe,73},{mary,65},{tom,55}]
+12> PID       12> Grades = lab6:grades_data().                                12> lab6:stop_data_server(PID1).
+stop
+13>     13> lab6:stop_data_server(PID1).                                13> Grades = lab6:grades_data().                                13> lab6:data_client(PID1, fun (Shapes) -> lists:map(F, Shapes) end).                                                                     13> Grades = lab6:grades_data().                                13> lab6:stop_data_server(PID1).                                13> PID1 = lab6:start_data_server(Grades)[C[C[C[C[C[C[C[C.
+** exception error: no match of right hand side value <0.102.0>
+14>     14> PID1 = lab6:start_data_server(Grades). = lab6:start_data_server(Grades). 2 = lab6:start_data_server(Grades).[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+<0.105.0>
+15>     15> PID2 = lab6:start_data_server(Grades).[C[Clab6:start_data_server(Grades). lab6:start_data_server(Grades). lab6:start_data_server(Grades). lab6:start_data_server(Grades). lab6:start_data_server(Grades). lab6:start_data_server(Grades). lab6:start_data_server(Grades). [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C). ). ). ). ). ). ). data_server). data_server). data_server). data_server). data_server). data_server). [C[C[C[C[C[C[C[C[C[C[C[C). ). ). ). ). ). c).l).i).e).n).t).().P).I).D).2).,). ).f).u).n). ).l).a).b).6).:).l).e).t).t).e).r)._).g).r).a).d).e).s).().G).). ). /).1).[C[C
+[{bill,'B'},
+ {sue,'A'},
+ {john,'B'},
+ {joe,'C'},
+ {mary,'D'},
+ {tom,'F'}]
+16>     16> lab6:data_client(PID2, fun lab6:letter_grades/1).                                                     16>     16> lab6:data_client(PID2, fun lab6:letter_grades/1).[C[C[C[C[C[C[C[C[C[C). ). ). ). ). ). ). ). ). ). ). ). ). ). ). ). ). ). ). ). ().X).)).[C[C[C-).>). ).x). ).e).n).d).[C[C
+x
+17>     17> lab6:data_client(PID2, fun (X)-> x end). end). X end).[C[C[C[C[C[C
+[{bill,82.0},{sue,95},{john,85},{joe,73},{mary,65},{tom,55}]
+18> lab6:stop_data_server(PID1).). 2).[C[C
+stop
+19> 
+BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+       (v)ersion (k)ill (D)b-tables (d)istribution
+a
+mtullo1@remote-n23:~/i471b/submit/lab6$ exit
+
+Script done on 2021-05-06 14:30:32-04:00 [COMMAND_EXIT_CODE="0"]
